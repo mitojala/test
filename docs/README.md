@@ -1,4 +1,4 @@
 # Trainings
 
-* Jokamaki
+* Jakomaki
 * Tampere
