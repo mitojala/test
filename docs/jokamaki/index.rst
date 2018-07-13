@@ -4,4 +4,4 @@ Jokamaki
    :maxdepth: 2
 
 
- tampere_steps
+ jokamaki_steps
