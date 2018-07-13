@@ -6,4 +6,3 @@ Trainings
 
    /tampere/index.rst
    /jakomaki/index.rst
-   README
