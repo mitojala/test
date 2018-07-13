@@ -5,5 +5,5 @@ Trainings
    :maxdepth: 3
 
    /tampere/index.rst
-   /jokamaki/index.rst
-   readme
+   /jak0maki/index.rst
+   Readme
