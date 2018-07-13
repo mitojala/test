@@ -4,4 +4,4 @@ Trainings
 .. toctree::
    :maxdepth: 2
 
-   /tampere
+   /tampere/tampere_steps
