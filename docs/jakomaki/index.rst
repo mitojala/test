@@ -1,4 +1,6 @@
-Jokamaki
+Jakomaki title
+====================================
+Jakomaki test_descr
 
 .. toctree::
    :maxdepth: 2
