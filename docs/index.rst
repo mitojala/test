@@ -4,5 +4,5 @@ Trainings
 .. toctree::
    :maxdepth: 2
 
-   mydocs
+   mydoc
    /tampere
