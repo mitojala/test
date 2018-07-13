@@ -2,7 +2,8 @@ Trainings
 ==============
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    /tampere/index.rst
    /jokamaki/index.rst
+   readme
