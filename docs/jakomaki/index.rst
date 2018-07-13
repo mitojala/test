@@ -4,4 +4,4 @@ Jokamaki
    :maxdepth: 2
 
 
- jokamaki_steps
+ jakomaki_steps
