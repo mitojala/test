@@ -2,4 +2,4 @@
    :maxdepth: 2
 
 
- jakomaki_steps
+ intro_steps
