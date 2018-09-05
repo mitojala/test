@@ -6,7 +6,9 @@ test
 
 https://www.youtube.com/watch?v=JfvIN4HiM9s&feature=youtu.be&list=RDJfvIN4HiM9s&t=82
 
-<dl>    <iframe src="src="_static/test5.html" height="345px" width="100%"></iframe> </dl>
+<dl>        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/watch?v=JfvIN4HiM9s&feature=youtu.be&list=RDJfvIN4HiM9s&t=82 frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div> </dl>
 
 
 .. raw:: html
