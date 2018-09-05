@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Pole </title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<style>
+#test1 {
+display:none;
+};
+#test2 {
+display:none;
+};
+</style>
+<script>
+
+$(document).ready(function() {
+	$("#divPart1").click(function() {
+		$("#test1").toggle();
+	});
+});
+$(document).ready(function() {
+	$("#divPart2").click(function() {
+		$("#test2").toggle();
+	});
+});
+$(document).ready(function() {
+	$("#divHCreateGroup").click(function() {
+		$("#HCreateGroup").toggle();
+	});
+});
+
+
+</script>
+
+
+</head>
+
+<body>
+
+
+<div><h3>laser data classification and grouping</h3>
+
+<a href="#" id="divPart1"><b>Pre-Processing Video</b></a>
+<h4> Help links : </h4>
+<ol>
+<li><a href="http://www.terrasolid.com/guides/tscan/mwcomputedistance.php?zoom_highlightsub=compute+distance">Compute Distance</a></li>
+<li><a href="http://www.terrasolid.com/guides/tscan/mwassigngroups.php?zoom_highlightsub=grouping">Assign group</a></li>
+</ol>
+
+<iframe id='test1' name='part1' width="1062" height="597" src="https://www.youtube.com/embed/CVNTzl544y0?start=225&end=268;rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<div><a href="#" id="divPart2"><b>Sample Creation</b></a>
+<h4> Help links : </h4>
+<ol>
+<li><div><a href="#" id="divHCreateGroup"><b>Create Group Iframe</b></a>
+
+<li><a href="http://www.terrasolid.com/guides/tscan/create-point-group.php">Create Group</a></li>
+<li><a href="http://www.terrasolid.com/guides/tscan/merge-point-groups.php?zoom_highlightsub=merge+group">Merge groups</a></li>
+<li><a href="http://www.terrasolid.com/guides/tscan/toolcutsection.php?zoom_highlightsub=cut+section">Cut Section</a></li>
+</ol>
+	<iframe 
+	style="display:none"
+	id="HCreateGroup"
+    title="Create Group"
+    width="1000"
+    height="500"
+    src="http://www.terrasolid.com/guides/tscan/create-point-group.php"
+	frameborder="0"
+	allow="fullscreen"
+	>
+	</li>
+</iframe>
+<iframe style="display:none" id='test2' name='part2' width="1062" height="597" src="https://www.youtube.com/embed/CVNTzl544y0?start=225&end=268;rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</body>
+
+</html>
