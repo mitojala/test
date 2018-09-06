@@ -45,12 +45,18 @@ Basic Training TerraScan, TerraModeler, TerraPhoto, TerraMatch / 3 days
 #### Boresight calibration of the scanner system (calibration data set)
 
     → separate training part with 'Calib' data set
+
 Set up a project in TerraScan
+
 Coordinate system settings and transformations
+
+![Screenshot](img/screenshot.png)
+
     • settings for coordinate systems
         * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
     • define transformation
         * projection change, `UTM 35 → GK 26, modify: xyz`
+	
 Import trajectories
     • raw file formats, format definition in settings
     • set directory (trajectory/)
