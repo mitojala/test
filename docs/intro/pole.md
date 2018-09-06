@@ -50,7 +50,7 @@ Set up a project in TerraScan
 
 Coordinate system settings and transformations
 
-![Screenshot](img/screenshot.png)
+![Screenshot](img/tscanMTB.png)
 
     • settings for coordinate systems
         * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
