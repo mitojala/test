@@ -48,9 +48,9 @@ Basic Training TerraScan, TerraModeler, TerraPhoto, TerraMatch / 3 days
 Set up a project in TerraScan
 Coordinate system settings and transformations
     • settings for coordinate systems
-        ◦ activate Finnish ETRS-TM35GK and ETRS GK and UTM North zone 35
+        * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
     • define transformation
-        ◦ projection change, UTM 35 → GK 26, modify: xyz
+        * projection change, `UTM 35 → GK 26, modify: xyz`
 Import trajectories
     • raw file formats, format definition in settings
     • set directory (trajectory/)
