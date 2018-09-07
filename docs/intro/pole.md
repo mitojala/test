@@ -71,8 +71,9 @@ Coordinate system settings and transformations
    
         * draw into design
    
-![image](img/screenshot7.png)
-![image](img/screenshot8.png)
+
+<img style="float: right;" src="img/screenshot7.png">
+<img style="float: right;" src="img/screenshot8.png">
 
    * several options to split trajectories automatically or manually, here we will use a polygon
       
