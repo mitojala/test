@@ -33,18 +33,16 @@ Basic Training TerraScan, TerraModeler, TerraPhoto, TerraMatch / 3 days
 
 #### Training data sets
 ##### 1. TerraScan, TerraMatch, TerraModeler, TerraPhoto : Jyväskylä ALS data set
-		laser data: 21.5.2011, raw data in UTM 35 N, 'ellipsoidal' heights,
-		density about 23 points/m2
-		images from other flight: 23.5.2012, altitude ca. 850 m, data in UTM 35 N
-		trajectory information in text file,  coordinates in GK 26, orthometric heights
+*laser data: 21.5.2011, raw data in UTM 35 N, 'ellipsoidal' heights,
+*density about 23 points/m2
+*images from other flight: 23.5.2012, altitude ca. 850 m, data in UTM 35 N
+*trajectory information in text file,  coordinates in GK 26, orthometric heights
 ##### 2. ALS calibration : Calib data set
-    Overview user interfaces
-      • main menu TScan, TPhoto
-      • main tool bar TScan, TPhoto, TModeler, TMatch
-      
+*Overview user interfaces
+  * main menu TScan, TPhoto
+  * main tool bar TScan, TPhoto, TModeler, TMatch   
 #### Boresight calibration of the scanner system (calibration data set)
-
-     separate training part with 'Calib' data set
+*separate training part with 'Calib' data set
 
 Set up a project in TerraScan
 
