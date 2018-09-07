@@ -68,12 +68,30 @@ Coordinate system settings and transformations
       
 #### Cut or split turnarounds of trajectories
    * for matching and tscan processing tasks
-   * several options to split trajectories automatically or manually
-      * draw polygon around project area, delete outside polygon
-   * draw into design
+   
+        * draw into design
+   
+![image](img/screenshot7.png)
+![image](img/screenshot8.png)
+
+   * several options to split trajectories automatically or manually, here we will use a polygon
+      
+      * draw polygon around project area
+      
+      ![image](img/screenshot9.png)
+      
+      * select the polygon
+      
+      ![image](img/screenshot10.png)
+      
+      * pick delete outside polygon
+      
+        ![image](img/screenshot13.png)      
+        ![image](img/screenshot11.png)
 
 
-![image](img/screenshot2.png)
+
+
 
 
     • save tie lines in tielines.til
