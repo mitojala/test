@@ -42,16 +42,18 @@ Overview user interfaces
   * main menu TScan, TPhoto
   * main tool bar TScan, TPhoto, TModeler, TMatch   
 #### Boresight calibration of the scanner system (calibration data set)
-*separate training part with 'Calib' data set
-
+* separate training part with 'Calib' data set
 #### Set up a project in TerraScan
 Coordinate system settings and transformations
   * settings for coordinate systems
      * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
+     
   ![image](img/screenshot.png)
   ![image](img/screenshot2.png) 
+  
   * define transformation
      * projection change, `UTM 35 → GK 26, modify: xyz`
+     
 ![image](img/screenshot3.png)
 ![image](img/screenshot4.png)
 
