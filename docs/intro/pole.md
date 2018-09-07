@@ -80,8 +80,6 @@ Cut or split turnarounds of trajectories
 
 
 .. only:: html
-
    .. figure:: img/screenshot.gif
-
       As Tumblr knows, GIFs are a lot of fun.
 
