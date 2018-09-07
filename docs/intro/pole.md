@@ -33,28 +33,28 @@ Basic Training TerraScan, TerraModeler, TerraPhoto, TerraMatch / 3 days
 
 #### Training data sets
 ##### 1. TerraScan, TerraMatch, TerraModeler, TerraPhoto : Jyväskylä ALS data set
-*laser data: 21.5.2011, raw data in UTM 35 N, 'ellipsoidal' heights,
-*density about 23 points/m2
-*images from other flight: 23.5.2012, altitude ca. 850 m, data in UTM 35 N
-*trajectory information in text file,  coordinates in GK 26, orthometric heights
+* laser data: 21.5.2011, raw data in UTM 35 N, 'ellipsoidal' heights,
+* density about 23 points/m2
+* images from other flight: 23.5.2012, altitude ca. 850 m, data in UTM 35 N
+* trajectory information in text file,  coordinates in GK 26, orthometric heights
 ##### 2. ALS calibration : Calib data set
-*Overview user interfaces
+Overview user interfaces
   * main menu TScan, TPhoto
   * main tool bar TScan, TPhoto, TModeler, TMatch   
 #### Boresight calibration of the scanner system (calibration data set)
 *separate training part with 'Calib' data set
 
-Set up a project in TerraScan
-
+#### Set up a project in TerraScan
 Coordinate system settings and transformations
+  * settings for coordinate systems
+     * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
+  ![image](img/screenshot.png)
+  ![image](img/screenshot2.png) 
+  * define transformation
+     * projection change, `UTM 35 → GK 26, modify: xyz`
+![image](img/screenshot3.png)
+![image](img/screenshot4.png)
 
-![image](img/screenshot.png)
-
-    • settings for coordinate systems
-        * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
-    • define transformation
-        * projection change, `UTM 35 → GK 26, modify: xyz`
-	
 Import trajectories
     • raw file formats, format definition in settings
     • set directory (trajectory/)
