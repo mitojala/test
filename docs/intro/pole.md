@@ -77,3 +77,11 @@ Cut or split turnarounds of trajectories
     
 
 ![image](img/screenshot.gif)
+
+
+.. only:: html
+
+   .. figure:: img/screenshot.gif
+
+      As Tumblr knows, GIFs are a lot of fun.
+
