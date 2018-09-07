@@ -57,17 +57,18 @@ Coordinate system settings and transformations
 ![image](img/screenshot3.png)
 ![image](img/screenshot4.png)
 
-Import trajectories
-    • raw file formats, format definition in settings
-    • set directory (trajectory/)
-    • import raw file (trajectory_raw/)
-        ◦ text file, format: time northing easting elevation roll pitch heading (TYXZRPH also implemented)
-        ◦ angle = degree (depends on raw trajectory file), adjust heading on if transformation from lat/lon to projection system, thinning normally on (0.10 m/deg for airborne)
-Cut or split turnarounds of trajectories
-    • for matching and tscan processing tasks
-    • several options to split trajectories automatically or manually
-        ◦ draw polygon around project area, delete outside polygon
-    • draw into design
+#### Import trajectories
+   * raw file formats, format definition in settings
+   * set directory (trajectory/)
+   * import raw file (trajectory_raw/)
+      * text file, format: time northing easting elevation roll pitch heading (TYXZRPH also implemented)
+      * angle = degree (depends on raw trajectory file), adjust heading on if transformation from lat/lon to projection system, thinning normally on (0.10 m/deg for airborne)
+      
+#### Cut or split turnarounds of trajectories
+   * for matching and tscan processing tasks
+   * several options to split trajectories automatically or manually
+      * draw polygon around project area, delete outside polygon
+   * draw into design
 
 
 ![image](img/screenshot2.png)
