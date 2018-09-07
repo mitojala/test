@@ -74,3 +74,6 @@ Cut or split turnarounds of trajectories
 
 
     • save tie lines in tielines.til
+    
+
+![image](img/screenshot.gif)
