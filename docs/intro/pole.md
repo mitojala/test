@@ -71,7 +71,7 @@ Coordinate system settings and transformations
    
         * draw into design
    
-                                                         ![image](img/screenshot7.png)
+            ![image](img/screenshot7.png)
                                                      a 
                                                      ![image](img/screenshot8.png)
 <img style="float: right;" src="img/screenshot8.png">
