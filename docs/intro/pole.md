@@ -31,6 +31,12 @@ Coordinate system settings and transformations
 
 ![image](img/screenshot4.png)
 
+##### Read a subset of points
+
+![image](img/screenshot14.png)
+
+![pointsParameters](img/screenshot15.png)
+
 ##### Import trajectories
    * raw file formats, format definition in settings
    * set directory (trajectory/)
@@ -66,9 +72,8 @@ Coordinate system settings and transformations
         
      ![image](img/screenshot11.png)
 
-
-
-
+      * draw into design
+      
 
 
     • save tie lines in tielines.til
