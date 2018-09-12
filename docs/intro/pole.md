@@ -1,10 +1,15 @@
 
 
-Basic Training TerraScan, TerraModeler, TerraPhoto, TerraMatch / 3 days
+Basic Training for producers, ALS Data, Bundle : TerraScan, TerraModeler, TerraPhoto, TerraMatch / 3 days
 ==============
 
+
+In this training project, we will consider you as a aerial lidar data producer. We will go through steps from boresight calibration to end products using 4 of our products : TerraScan, TerraModeler, TerraPhoto, TerraMatch.
+
+
 #### Training data sets
-##### 1. TerraScan, TerraMatch, TerraModeler, TerraPhoto : Jyväskylä ALS data set
+
+##### 1.  Jyväskylä ALS data set
 * laser data: 21.5.2011, raw data in UTM 35 N, 'ellipsoidal' heights,
 * density about 23 points/m2
 * images from other flight: 23.5.2012, altitude ca. 850 m, data in UTM 35 N
@@ -13,10 +18,12 @@ Basic Training TerraScan, TerraModeler, TerraPhoto, TerraMatch / 3 days
 Overview user interfaces
   * main menu TScan, TPhoto
   * main tool bar TScan, TPhoto, TModeler, TMatch   
-#### Boresight calibration of the scanner system (calibration data set)
-* separate training part with 'Calib' data set
+
 ##### Set up a project in TerraScan
-Coordinate system settings and transformations
+
+The first step for every process in TerraScan consist in setting the coordinate system. As trajectories and/or end product might be in different coordinate systems, we will show you how to activate a coordinate system and how to set a transformation. 
+
+###### Coordinate system settings and transformations
   * settings for coordinate systems
      * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
      
@@ -31,7 +38,10 @@ Coordinate system settings and transformations
 
 ![defTransf2](img/screenshot4.png)
 
-##### Read a subset of points
+
+###### Read a subset of points
+
+Your coordinate system being set, it is time to visualize and get familiar with your raw data.
 
  * In the main menu, go to `File/Read points`
 
@@ -82,8 +92,8 @@ Coordinate system settings and transformations
 
      ![deduceTime](img/screenshot16.png)  
 
-
-    
+#### Boresight calibration of the scanner system (calibration data set)
+* separate training part with 'Calib' data set
 
 ![image](img/screenshot.gif)
 
