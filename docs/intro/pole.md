@@ -1,10 +1,10 @@
 
 
-Basic Training for producers, ALS Data, Bundle : TerraScan, TerraModeler, TerraPhoto, TerraMatch / 3 days
+Basic Training for ALS Data producers, Bundle : TerraScan, TerraModeler, TerraPhoto, TerraMatch / 3 days
 ==============
 
 
-In this training project, we will consider you as a aerial lidar data producer. We will go through steps from boresight calibration to end products using 4 of our products : TerraScan, TerraModeler, TerraPhoto, TerraMatch.
+In this training project, we will consider you as a aerial lidar data producer. We will go through all steps from boresight calibration to end products using 4 of our products : TerraScan, TerraModeler, TerraPhoto, TerraMatch.
 
 
 #### Training data sets
@@ -52,6 +52,8 @@ Your coordinate system being set, it is time to visualize and get familiar with 
 ![pointsParameters](img/screenshot15.png)
 
 ##### Import trajectories
+
+A lot of TerraScan and TerraMatch tools, specialy during the matching process, need the flight trajectories.
 
 * raw file formats, format definition in settings
 * set directory (trajectory/)
