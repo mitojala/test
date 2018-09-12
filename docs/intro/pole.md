@@ -33,13 +33,18 @@ Coordinate system settings and transformations
 
 ##### Read a subset of points
 
+ * In the main menu, go to `File/Read points`
+
 ![image](img/screenshot14.png)
+
+* Be sure to select the right transformation we defined earlier and the subset factor (her 1 out of 10 points is read)
 
 ![pointsParameters](img/screenshot15.png)
 
 ##### Import trajectories
-   * raw file formats, format definition in settings
-   * set directory (trajectory/)
+
+* raw file formats, format definition in settings
+* set directory (trajectory/)
    
    ![image](img/screenshot5.png)
 
