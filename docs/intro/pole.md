@@ -1,31 +1,3 @@
-# Poles3
-#### 1. Laser data classification and grouping
-
-test
-==============
-
-https://www.youtube.com/watch?v=JfvIN4HiM9s&feature=youtu.be&list=RDJfvIN4HiM9s&t=82
-
-<dl>      
-  <iframe id='test1' name='part1' width="1062" height="597" src="https://www.youtube.com/embed/CVNTzl544y0?start=225&end=268;rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div> </dl>
-
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/watch?v=JfvIN4HiM9s&feature=youtu.be&list=RDJfvIN4HiM9s&t=82 frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-test2
-==============
-https://youtu.be/2zjLBWnZGTU?t=115
-
-#### 2. Definition of sample objects
-#### 3. Creation of cell elements
-#### 4. poles with the Find Poles tool
-
-
-
 
 
 Basic Training TerraScan, TerraModeler, TerraPhoto, TerraMatch / 3 days
@@ -49,18 +21,22 @@ Coordinate system settings and transformations
      * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
      
   ![image](img/screenshot.png)
+  
   ![image](img/screenshot2.png) 
   
   * define transformation
      * projection change, `UTM 35 → GK 26, modify: xyz`
      
 ![image](img/screenshot3.png)
+
 ![image](img/screenshot4.png)
 
 #### Import trajectories
    * raw file formats, format definition in settings
    * set directory (trajectory/)
+   
 ![image](img/screenshot5.png)
+
    * import raw file (trajectory_raw/)
       * text file, format: time northing easting elevation roll pitch heading (TYXZRPH also implemented)
       * angle = degree (depends on raw trajectory file), adjust heading on if transformation from lat/lon to projection system, thinning normally on (`0.10 m/deg for airborne`)
@@ -71,10 +47,10 @@ Coordinate system settings and transformations
    
         * draw into design
       
-             ![image](img/screenshot7.png)               ![image](img/screenshot8.png)
+             ![image](img/screenshot7.png)         
+             
+             ![image](img/screenshot8.png)
                                                                    
-
-
    * several options to split trajectories automatically or manually, here we will use a polygon
       
       * draw polygon around project area
@@ -87,7 +63,8 @@ Coordinate system settings and transformations
       
       * pick delete outside polygon
       
-        ![image](img/screenshot13.png)      
+        ![image](img/screenshot13.png)    
+        
         ![image](img/screenshot11.png)
 
 
