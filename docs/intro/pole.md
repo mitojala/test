@@ -37,7 +37,7 @@ Coordinate system settings and transformations
 
 ![readPoints](img/screenshot14.png)
 
-* Be sure to select the right transformation we defined earlier and the subset factor (her 1 out of 10 points is read)
+* Be sure to select the right transformation we defined earlier and the subset factor (here 1 out of 10 points is read)
 
 ![pointsParameters](img/screenshot15.png)
 
@@ -82,7 +82,7 @@ Coordinate system settings and transformations
 
      ![deduceTime](img/screenshot16.png)  
 
-   • save tie lines in tielines.til
+
     
 
 ![image](img/screenshot.gif)
