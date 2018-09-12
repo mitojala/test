@@ -15,7 +15,7 @@ Overview user interfaces
   * main tool bar TScan, TPhoto, TModeler, TMatch   
 #### Boresight calibration of the scanner system (calibration data set)
 * separate training part with 'Calib' data set
-#### Set up a project in TerraScan
+##### Set up a project in TerraScan
 Coordinate system settings and transformations
   * settings for coordinate systems
      * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
@@ -31,7 +31,7 @@ Coordinate system settings and transformations
 
 ![image](img/screenshot4.png)
 
-#### Import trajectories
+##### Import trajectories
    * raw file formats, format definition in settings
    * set directory (trajectory/)
    
@@ -43,7 +43,7 @@ Coordinate system settings and transformations
       
       ![image](img/screenshot6.png)
       
-#### Cut or split turnarounds of trajectories
+##### Cut or split turnarounds of trajectories
    * for matching and tscan processing tasks
    
         * draw into design
