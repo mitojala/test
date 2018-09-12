@@ -20,22 +20,22 @@ Coordinate system settings and transformations
   * settings for coordinate systems
      * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
      
-  ![image](img/screenshot.png)
+  ![imsetCoordSys1](img/screenshot.png)
   
-  ![image](img/screenshot2.png) 
+  ![setCoordSys2](img/screenshot2.png) 
   
   * define transformation
      * projection change, `UTM 35 → GK 26, modify: xyz`
      
-![image](img/screenshot3.png)
+![defTransf1](img/screenshot3.png)
 
-![image](img/screenshot4.png)
+![defTransf2](img/screenshot4.png)
 
 ##### Read a subset of points
 
  * In the main menu, go to `File/Read points`
 
-![image](img/screenshot14.png)
+![readPoints](img/screenshot14.png)
 
 * Be sure to select the right transformation we defined earlier and the subset factor (her 1 out of 10 points is read)
 
@@ -46,7 +46,7 @@ Coordinate system settings and transformations
 * raw file formats, format definition in settings
 * set directory (trajectory/)
    
-   ![image](img/screenshot5.png)
+   ![trajDirectory](img/screenshot5.png)
 
    * import raw file (trajectory_raw/)
       * text file, format: time northing easting elevation roll pitch heading (TYXZRPH also implemented)
@@ -55,33 +55,34 @@ Coordinate system settings and transformations
       ![image](img/screenshot6.png)
       
 ##### Cut or split turnarounds of trajectories
-   * for matching and tscan processing tasks
+   * For matching and tscan processing tasks
    
-        * draw into design
+      * Draw into design allow us to visualize the trajectories by creating lines in the active level
       
-        ![image](img/screenshot7.png)         
+        ![drawIntoDesign1](img/screenshot7.png)         
              
-        ![image](img/screenshot8.png)
+        ![drawIntoDesign1](img/screenshot8.png)
                                                                    
-   * several options to split trajectories automatically or manually, here we will use a polygon
+   * Several options to split trajectories automatically or manually, here we will use a polygon
       
-      * draw polygon around project area
+      * Draw polygon around project area
       
-      * select the polygon
+      * Select the polygon
       
-     ![image](img/screenshot10.png)
+     ![polygonSelection](img/screenshot10.png)
      
-      * pick delete outside polygon
+      * Pick delete outside polygon
       
-     ![image](img/screenshot13.png)    
+     ![deleteOutside1](img/screenshot13.png)    
         
-     ![image](img/screenshot11.png)
+     ![deleteOutside2](img/screenshot11.png)
 
-      * draw into design
       
+   * To check that the split when right and that the trajectories and points timestamps are coherent, we will deduce from which trajectory points come based on the timestamps. For this, on the main bar, go to `Line/Deduce using time`
 
+     ![deduceTime](img/screenshot16.png)  
 
-    • save tie lines in tielines.til
+   • save tie lines in tielines.til
     
 
 ![image](img/screenshot.gif)
