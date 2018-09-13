@@ -90,14 +90,25 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
      ![deleteOutside2](img/screenshot11.png)
 
       
-   * To check that the split when right and that the trajectories and points timestamps are coherent, we will deduce from which trajectory points come based on the timestamps. For this, on the main bar, go to `Line/Deduce using time`
+   * To check that the split when right and that the trajectories and points timestamps are coherent, we will deduce from which trajectory points come based on the timestamps. 
+   
+     * For this, on the main bar, go to `Line/Deduce using time`
 
      ![deduceTime](img/screenshot16.png)  
 
+     * Then we will display the points based on their trajectories
+     
+     ![displayPoints1](img/screenshot18.png)  
+     
+     ![displayPoints2](img/screenshot19.png)
+     
+     ![displayPoints3](img/screenshot17.png)     
+     
 #### Boresight calibration of the scanner system (calibration data set)
 * separate training part with 'Calib' data set
 
 ![image](img/screenshot.gif)
+
 
 
 ![GIF](img/screenshot.gif)
