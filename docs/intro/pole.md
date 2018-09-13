@@ -17,13 +17,16 @@ In this training project, we will consider you as a aerial lidar data producer. 
 #### 2. ALS calibration : Calib data set
 Overview user interfaces
   * main menu TScan, TPhoto
-  * main tool bar TScan, TPhoto, TModeler, TMatch   
+  * main tool bar TScan, TPhoto, TModeler, TMatch
+#### 3. Project DGN
+* Project DGN file based on a 3d mm seed file
+* Contains project limit, 2d objects and level definition
 
-#### Set up a project in TerraScan
+### Set up a project in TerraScan
 
 The first step for every process in TerraScan consist in setting the coordinate system. As trajectories and/or end product might be in different coordinate systems, we will show you how to activate a coordinate system and how to set a transformation. 
 
-##### Coordinate system settings and transformations
+#### Coordinate system settings and transformations
   * settings for coordinate systems
      * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
      
@@ -39,7 +42,7 @@ The first step for every process in TerraScan consist in setting the coordinate 
 ![defTransf2](img/screenshot4.png)
 
 
-##### Read a subset of points
+#### Read a subset of points
 
 Your coordinate system being set, it is time to visualize and get familiar with your raw data.
 
@@ -51,11 +54,11 @@ Your coordinate system being set, it is time to visualize and get familiar with 
 
 ![pointsParameters](img/screenshot15.png)
 
-##### Trajectories
+#### Trajectories
 
 A lot of TerraScan and TerraMatch tools, specialy during the matching process, need the flight trajectories.
 
-###### Import Trajectories
+##### Import Trajectories
 
 * raw file formats, format definition in settings
 * set directory (trajectory/)
@@ -68,7 +71,7 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
       
       ![image](img/screenshot6.png)
       
-###### Cut or split turnarounds of trajectories
+##### Cut or split turnarounds of trajectories
    * For matching and tscan processing tasks
    
       * Draw into design allow us to visualize the trajectories by creating lines in the active level
@@ -111,18 +114,24 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
  * At this stage, you can get familiar with the data through the section and display tools.
  
     ![section](img/screenshot20.png)   
+    
  ---
- **NOTE**
+ **Warning**
  For the section tool, please follow the instruction on the bottom left of your screen.
  ---
- ====
+ 
+
  Our subset is now ready and you checked that the trajectories are well related.
  ===
  
- ##### Block Definition
+ #### Block Definition
  
  To work properly, we will devide our project area into different blocks. It will allow to test in one block and then execute processes on every blocks independently. That way if an error arises on a specific block, it will not impact the others. The number of points in memory at a time will also be lower.
  
+##### Block limits
+
+There are different ways to design blocks, here we will first 
+
  
  
 ### Boresight calibration of the scanner system (calibration data set)
