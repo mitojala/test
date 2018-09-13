@@ -110,11 +110,10 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
     
  * At this stage, you can get familiar with the data through the section and display tools.
  
+    ![section](img/screenshot20.png)   
  ---
  **NOTE**
  For the section tool, please follow the instruction on the bottom left of your screen.
- 
-   ![section](img/screenshot20.png)   
    
  ---
  ====
