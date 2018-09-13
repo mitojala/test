@@ -36,7 +36,7 @@ A project requires most of the time to set 5 elements :
  4. Blocks
  5. Point class
  
- We will first prepare all these settings on a test subset of points before formally defining the project. Keep in mind that with a simple project, some of those points could be covered using default parameters.
+ We will first prepare all these settings on a test subset of points before formally defining the project.
  
  --- 
  _Note :_
