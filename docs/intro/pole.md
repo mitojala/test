@@ -33,7 +33,7 @@ A project in Terrascan requires most of the time to set 5 elements :
  4. Blocks
  5. Point class
  
- We will first prepare all these settings on a test subset of points before formally defining the project.
+ We will first prepare all these settings on a test subset of points before formally defining the project. Keep in mind that with a simple project, some of those points could be covered using default parameters.
  
  --- 
  _Note :_
@@ -142,7 +142,7 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
  
  ---
  _Note_ :
- Our subset is now ready and you checked that the trajectories are well related.
+ Our subset is ready and you checked that the trajectories are well related.
  ---
  
  #### Block Definition
@@ -188,8 +188,18 @@ In Terrascan, you can create and save your own point class files. Here we will l
  
 #### Project Definition
 
+The project in terrascan is a metadata file allowing you to associate locations to your data, your trajectories etc.. and some other parameters so that that can be saved, transfered, reloaded and documented more easily.
+As soon as you start to work properly in a production project, it should be defined. 
+
+The project related tools can be found in the main tool bar
+
+![section](img/screenshot28.png)  
 
 
+
+![section](img/screenshot28.png)
+
+![section](img/screenshot29.png)
  
 ### Boresight calibration of the scanner system (calibration data set)
 * separate training part with 'Calib' data set
