@@ -18,9 +18,11 @@ In this training project, we will consider you as a aerial lidar data producer. 
 Overview user interfaces
   * main menu TScan, TPhoto
   * main tool bar TScan, TPhoto, TModeler, TMatch
-#### 3. Project DGN
-* Project DGN file based on a 3d mm seed file
-* Contains project limit, 2d objects and level definition
+#### 3. Project additionnal documents
+* Project DGN file based on a 3d mm seed file, contains project limit, 2d objects and level definition
+* Point class definition file
+
+
 
 ### Set up a project in TerraScan
 
@@ -38,10 +40,12 @@ A project in Terrascan requires most of the time to set 6 elements :
  Some of them can use the default parameters or be ignored on a particular small project 
 ---
 
+Open the DGN file in `<trainingFolder>/dgn` via microstation so that we can start.
+
 #### Coordinate system settings and transformations
 
 
-The first step for every process in TerraScan consist in setting the coordinate system. As trajectories and/or end product might be in different coordinate systems, we will show you how to activate a coordinate system and how to set a transformation. 
+The first step for every process in TerraScan consists in setting the coordinate system. As trajectories and/or end product might be in different coordinate systems, we will show you how to activate a coordinate system and how to set a transformation. 
 
   * settings for coordinate systems
      * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
@@ -166,13 +170,24 @@ There are different ways to design blocks, here we will draw lines dividing our 
  * If the precedent levels are active, you should be able to see the result
   
   ![section](img/screenshot25.png)  
+  
+  #### Point Class definition
+  
+In Terrascan, you can create and save your own point class files. Here we will load an existing one:
+`<trainingFolder>/classes.ptc`
+ 
+![section](img/screenshot26.png)  
+
+![section](img/screenshot27.png)  
+
  
  ---
  _Note_ : 
- We now have trajectories, points, and blocks checked. We will be able to formally define the project
+ We now have trajectories, points, blocks, and point classes checked. We will be able to formally define the project
  ---
  
 #### Project Definition
+
 
 
  
