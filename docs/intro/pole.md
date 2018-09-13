@@ -191,10 +191,11 @@ In Terrascan, you can create and save your own point class files. Here we will l
  We now have trajectories, points, blocks, and point classes checked. We will be able to formally define the project
  ---
  
-#### Project Definition
+### Project Formal Definition
 
 
 The project related tools can be found in the main tool bar
+
 
 ![section](img/screenshot28.png)  
 
