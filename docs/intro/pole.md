@@ -116,20 +116,18 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
     ![section](img/screenshot20.png)   
     
  ---
- **Warning**
+ **_Warning_ : **
  For the section tool, please follow the instruction on the bottom left of your screen.
  ---
  
  ---
- **Note**
+ **_Note_ : **
  Our subset is now ready and you checked that the trajectories are well related.
  ---
  
  #### Block Definition
  
- To work properly, we will devide our project area into different blocks. It will allow to test in one block and then execute processes on every blocks independently. That way if an error arises on a specific block, it will not impact the others. The number of points in memory at a time will also be lower.
- 
-##### Block limits
+To work properly, we will devide our project area into different blocks. It will allow to test in one block and then execute processes on every blocks independently. That way if an error arises on a specific block, it will not impact the others. The number of points in memory at a time will also be lower.
 
 There are different ways to design blocks, here we will draw lines dividing our project area shape in three parts.
 
@@ -148,6 +146,19 @@ There are different ways to design blocks, here we will draw lines dividing our 
   * number of points inside blocks will be drawn to `Label level`
   
  ![section](img/screenshot24.png)  
+ 
+ * If the precedent levels are active, you should be able to see the result
+  
+  ![section](img/screenshot25.png)  
+ 
+ ---
+ **_Note_ : **
+ We now have trajectories, points, and blocks checked. We will be able to formally define the project
+ ---
+ 
+#### Project Definition
+
+
  
 ### Boresight calibration of the scanner system (calibration data set)
 * separate training part with 'Calib' data set
