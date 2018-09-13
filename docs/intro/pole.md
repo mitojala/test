@@ -26,7 +26,7 @@ Overview user interfaces
 
 ### Set up a project in TerraScan
 
-A project in Terrascan requires most of the time to set 6 elements :
+A project in Terrascan requires most of the time to set 5 elements :
  1. Coordinate System settings
  2. Raw data
  3. Trajectories
