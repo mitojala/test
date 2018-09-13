@@ -51,7 +51,7 @@ Your coordinate system being set, it is time to visualize and get familiar with 
 
 ![pointsParameters](img/screenshot15.png)
 
-##### Import trajectories
+###### Import trajectories
 
 A lot of TerraScan and TerraMatch tools, specialy during the matching process, need the flight trajectories.
 
@@ -66,7 +66,7 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
       
       ![image](img/screenshot6.png)
       
-##### Cut or split turnarounds of trajectories
+###### Cut or split turnarounds of trajectories
    * For matching and tscan processing tasks
    
       * Draw into design allow us to visualize the trajectories by creating lines in the active level
@@ -77,13 +77,13 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
                                                                    
    * Several options to split trajectories automatically or manually, here we will use a polygon
       
-      * Draw polygon around project area
+      1. Draw polygon around project area
       
-      * Select the polygon
+      2. Select the polygon
       
      ![polygonSelection](img/screenshot10.png)
      
-      * Pick delete outside polygon
+      3. Pick delete outside polygon
       
      ![deleteOutside1](img/screenshot13.png)    
         
@@ -92,18 +92,39 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
       
    * To check that the split when right and that the trajectories and points timestamps are coherent, we will deduce from which trajectory points come based on the timestamps. 
    
-     * For this, on the main bar, go to `Line/Deduce using time`
+     1. For this, on the main bar, go to `Line/Deduce using time`
 
      ![deduceTime](img/screenshot16.png)  
 
-     * Then we will display the points based on their trajectories
+     2. Then we will display the points based on their trajectories
      
-     ![displayPoints1](img/screenshot18.png)  
-     
-     ![displayPoints2](img/screenshot19.png)
-     
-     ![displayPoints3](img/screenshot17.png)     
-     
+   ![displayPoints1](img/screenshot18.png)  
+    
+    
+   ![displayPoints2](img/screenshot19.png)
+    
+   
+   ![displayPoints3](img/screenshot17.png)     
+    
+ * At this stage, you can get familiar with the data through the section and display tools.
+ 
+ ---
+ **NOTE**
+ For the section tool, please follow the instruction on the bottom left of your screen.
+ 
+   ![section](img/screenshot20.png)   
+   
+ ---
+ ====
+ Our subset is now ready and you checked that the trajectories are well related.
+ ===
+ 
+ ###### Block Definition
+ 
+ To work properly, we will devide our project area into different blocks. It will allow to test in one block and then execute processes on every blocks independently. That way if an error arises on a specific block, it will not impact the others. The number of points in memory at a time will also be lower.
+ 
+ 
+ 
 #### Boresight calibration of the scanner system (calibration data set)
 * separate training part with 'Calib' data set
 
