@@ -51,9 +51,11 @@ Your coordinate system being set, it is time to visualize and get familiar with 
 
 ![pointsParameters](img/screenshot15.png)
 
-###### Import trajectories
+###### Trajectories
 
 A lot of TerraScan and TerraMatch tools, specialy during the matching process, need the flight trajectories.
+
+####### Import Trajectories
 
 * raw file formats, format definition in settings
 * set directory (trajectory/)
@@ -66,7 +68,7 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
       
       ![image](img/screenshot6.png)
       
-###### Cut or split turnarounds of trajectories
+####### Cut or split turnarounds of trajectories
    * For matching and tscan processing tasks
    
       * Draw into design allow us to visualize the trajectories by creating lines in the active level
