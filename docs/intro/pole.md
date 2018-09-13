@@ -24,9 +24,25 @@ Overview user interfaces
 
 ### Set up a project in TerraScan
 
-The first step for every process in TerraScan consist in setting the coordinate system. As trajectories and/or end product might be in different coordinate systems, we will show you how to activate a coordinate system and how to set a transformation. 
+A project in Terrascan requires most of the time to set 6 elements :
+ 1. Coordinate System settings
+ 2. Raw data
+ 3. Trajectories
+ 4. Blocks
+ 5. Point class
+ 
+ We will first prepare all these settings on a test subset of points before formally defining the project.
+ 
+ --- 
+ _Note :_
+ Some of them can use the default parameters or be ignored on a particular small project 
+---
 
 #### Coordinate system settings and transformations
+
+
+The first step for every process in TerraScan consist in setting the coordinate system. As trajectories and/or end product might be in different coordinate systems, we will show you how to activate a coordinate system and how to set a transformation. 
+
   * settings for coordinate systems
      * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
      
@@ -116,12 +132,12 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
     ![section](img/screenshot20.png)   
     
  ---
- **_Warning_ : **
+ _Warning_ : 
  For the section tool, please follow the instruction on the bottom left of your screen.
  ---
  
  ---
- **_Note_ : **
+ _Note_ :
  Our subset is now ready and you checked that the trajectories are well related.
  ---
  
@@ -152,7 +168,7 @@ There are different ways to design blocks, here we will draw lines dividing our 
   ![section](img/screenshot25.png)  
  
  ---
- **_Note_ : **
+ _Note_ : 
  We now have trajectories, points, and blocks checked. We will be able to formally define the project
  ---
  
