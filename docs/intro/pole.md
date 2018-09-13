@@ -7,26 +7,29 @@ Basic Training for ALS Data producers, Bundle : TerraScan, TerraModeler, TerraPh
 In this training project, we will consider you as a aerial lidar data producer. We will go through all steps from boresight calibration to end products using 4 of our products : TerraScan, TerraModeler, TerraPhoto, TerraMatch.
 
 
-### Training data sets
+## Training data sets
 
-#### 1.  Jyväskylä ALS data set
+### 1.  Jyväskylä ALS data set
 * laser data: 21.5.2011, raw data in UTM 35 N, 'ellipsoidal' heights,
 * density about 23 points/m2
 * images from other flight: 23.5.2012, altitude ca. 850 m, data in UTM 35 N
 * trajectory information in text file,  coordinates in GK 26, orthometric heights
-#### 2. ALS calibration : Calib data set
+### 2. ALS calibration : Calib data set
 Overview user interfaces
   * main menu TScan, TPhoto
   * main tool bar TScan, TPhoto, TModeler, TMatch
-#### 3. Project additionnal documents
+### 3. Project additionnal documents
 * Project DGN file based on a 3d mm seed file, contains project limit, 2d objects and level definition
 * Point class definition file
 
 
 
-### Set up a project in TerraScan
+## Set up a project in TerraScan
 
-A project in Terrascan requires most of the time to set 5 elements :
+The project in Terrascan is a metadata file allowing you to associate locations to your data, your trajectories etc.. and some other parameters so that that can be saved, transfered, reloaded and documented more easily.
+As soon as you start to work properly in a production project, it should be defined. 
+
+A project requires most of the time to set 5 elements :
  1. Coordinate System settings
  2. Raw data
  3. Trajectories
@@ -41,6 +44,8 @@ A project in Terrascan requires most of the time to set 5 elements :
 ---
 
 Open the DGN file in `<trainingFolder>/dgn` via microstation so that we can start.
+
+### Project preparation
 
 #### Coordinate system settings and transformations
 
@@ -62,7 +67,7 @@ The first step for every process in TerraScan consists in setting the coordinate
 ![defTransf2](img/screenshot4.png)
 
 
-#### Read a subset of points
+##### Read a subset of points
 
 Your coordinate system being set, it is time to visualize and get familiar with your raw data.
 
@@ -188,8 +193,6 @@ In Terrascan, you can create and save your own point class files. Here we will l
  
 #### Project Definition
 
-The project in terrascan is a metadata file allowing you to associate locations to your data, your trajectories etc.. and some other parameters so that that can be saved, transfered, reloaded and documented more easily.
-As soon as you start to work properly in a production project, it should be defined. 
 
 The project related tools can be found in the main tool bar
 
