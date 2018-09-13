@@ -120,9 +120,10 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
  For the section tool, please follow the instruction on the bottom left of your screen.
  ---
  
-
+ ---
+ **Note**
  Our subset is now ready and you checked that the trajectories are well related.
- ===
+ ---
  
  #### Block Definition
  
@@ -130,9 +131,23 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
  
 ##### Block limits
 
-There are different ways to design blocks, here we will first 
+There are different ways to design blocks, here we will draw lines dividing our project area shape in three parts.
 
+* To create these lines, active the level 9 and use microstation smart line tool
+
+ ![section](img/screenshot21.png)
  
+ ![section](img/screenshot22.png)   
+
+ * Once the lines created, we pick the `Design Block Boundaries`
+ 
+ ![section](img/screenshot23.png)
+ 
+  * `Line level` contains user defined block division
+  * blocks will be drawn to `Shape level`
+  * number of points inside blocks will be drawn to `Label level`
+  
+ ![section](img/screenshot24.png)  
  
 ### Boresight calibration of the scanner system (calibration data set)
 * separate training part with 'Calib' data set
