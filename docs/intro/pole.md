@@ -194,7 +194,7 @@ In Terrascan, you can create and save your own point class files. Here we will l
 ### Project Formal Definition
 
 
-The project related tools can be found in the main tool bar
+The project related tools can be found in the main tool bar.
 
 
 ![section](img/screenshot28.png)  
