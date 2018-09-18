@@ -149,7 +149,7 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
  
  #### Block Limit Definition
  
-To work properly, we will devide our project area into different blocks. It will allow to test in one block and then execute processes on every blocks independently. That way if an error arises on a specific block, it will not impact the others. The number of points in memory at a time will also be lower.
+To work properly, we will divide our project area into different blocks. It will allow to test in one block and then execute processes on every blocks independently. That way if an error arises on a specific block, it will not impact the others. The number of points in memory at a time will also be lower.
 
 There are different ways to design blocks, here we will draw lines dividing our project area shape in three parts.
 
