@@ -183,8 +183,6 @@ In Terrascan, you can create and save your own point class files. Here we will l
  
 ![section](img/screenshot26.png)  
 
-![section](img/screenshot27.png)  
-
  
  ---
  _Note_ : 
@@ -197,9 +195,7 @@ In Terrascan, you can create and save your own point class files. Here we will l
 The project related tools can be found in the main tool bar.
 
 
-![section](img/screenshot28.png)  
-
-
+![section](img/screenshot27.png)  
 
 ![section](img/screenshot28.png)
 
