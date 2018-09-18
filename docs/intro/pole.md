@@ -6,7 +6,6 @@ Basic Training for ALS Data producers, Bundle : TerraScan, TerraModeler, TerraPh
 
 In this training project, we will consider you as a aerial lidar data producer. We will go through all steps from boresight calibration to end products using 4 of our products : TerraScan, TerraModeler, TerraPhoto, TerraMatch.
 
-
 ## Training data sets
 
 ### 1.  Jyväskylä ALS data set
