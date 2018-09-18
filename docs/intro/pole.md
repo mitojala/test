@@ -238,9 +238,30 @@ To check that it went well, use the project tool to draw them onto the dgn.
 
 ![Saveproject2](img/screenshot34.png)
 
-
 #### Points import
- 
+
+As you can seeon the project window, no file is assiated with the blocks. To do this you need to import the point files into the project. This will create fbi files in the project folder, maybe transforming the coordinate system if asked, and write the blocks metadata into the project file (*.prj).
+
+![Saveproject2](img/screenshot39.png)
+
+![Saveproject2](img/screenshot40.png)
+
+ ---
+ _Trick_ : 
+ You can import files stored in different folder with the "add" option
+ ---
+
+![Saveproject2](img/screenshot41.png)
+
+In this last windows, we will select the transformation as our point cloud is not in the same coordinate system as our vectors
+Please select the transformation we created earlier `UTM 35 → GK 26`
+
+ ---
+ _Note_ : 
+ Using `Deduce using time` here save us one step by associating the points to their correspondant trajectory, it is based on timestamp
+ ---
+
+
 
 ### Boresight calibration of the scanner system (calibration data set)
 * separate training part with 'Calib' data set
