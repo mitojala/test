@@ -264,10 +264,10 @@ Please use the transformation we created earlier `UTM 35 → GK 26`
 Your blocks are now ready! 👌
 
 
-### Boresight calibration of the scanner system (calibration data set)
-* separate training part with 'Calib' data set
+Boresight calibration of the scanner system (calibration data set)
+==============
 
-![image](img/screenshot.gif)
+
 
 
 
