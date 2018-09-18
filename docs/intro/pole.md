@@ -248,7 +248,7 @@ As you can seeon the project window, no file is assiated with the blocks. To do 
 
  ---
  _Trick_ : 
- You can import files stored in different folder with the "add" option
+ You can import files stored in different folders with the "add" option
  ---
 
 ![Saveproject2](img/screenshot41.png)
