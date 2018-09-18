@@ -207,7 +207,10 @@ Here you have to select the attributes you want to be saved with your project. I
  The storage format is here really important. Only the `Fast Binary` default one support all the attributes!
  ---
  
+ You can chose the location of different important project folders. For your first project, the closer to the default parameter would be the better.
  
+ For the block size. We went through the block definition earlier so we will not use these default parameters, you can let them as they are.
+
  
 ### Boresight calibration of the scanner system (calibration data set)
 * separate training part with 'Calib' data set
