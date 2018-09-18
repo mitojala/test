@@ -258,7 +258,7 @@ Please select the transformation we created earlier `UTM 35 → GK 26`
 
  ---
  _Note_ : 
- Using `Deduce using time` here save us one step by associating the points to their respective trajectory, it is based on timestamp
+ Using `Deduce using time` here save us one step by associating the points to their respective trajectories, it is based on timestamp
  ---
 
 
