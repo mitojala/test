@@ -197,6 +197,17 @@ The project related tools can be found in the main tool bar.
 ![section](img/screenshot28.png)
 
 ![section](img/screenshot29.png)
+
+Here you have to select the attributes you want to be saved with your project. If you do not pick Color and then add color to your points, then the color will be lost after saving and closing the project.
+
+![projectAttribute](img/screenshot30.png)
+ 
+ ---
+ _Warning_ : 
+ The storage format is here really important. Only the `Fast Binary` default one support all the attributes!
+ ---
+ 
+ 
  
 ### Boresight calibration of the scanner system (calibration data set)
 * separate training part with 'Calib' data set
