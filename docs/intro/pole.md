@@ -240,7 +240,7 @@ To check that it went well, use the project tool to draw them onto the dgn.
 
 
 #### Points import
-
+ 
 
 ### Boresight calibration of the scanner system (calibration data set)
 * separate training part with 'Calib' data set
