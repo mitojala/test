@@ -1,5 +1,4 @@
 
-
 Basic Training for ALS Data producers, Bundle : TerraScan, TerraModeler, TerraPhoto, TerraMatch / 3 days
 ==============
 
