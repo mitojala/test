@@ -253,14 +253,15 @@ As you can seeon the project window, no file is assiated with the blocks. To do 
 
 ![Saveproject2](img/screenshot41.png)
 
-In this last windows, we will select the transformation as our point cloud is not in the same coordinate system as our vectors
-Please select the transformation we created earlier `UTM 35 → GK 26`
+In this last windows, we select the transformation as our point cloud is not in the same coordinate system as our vectors.
+Please use the transformation we created earlier `UTM 35 → GK 26`
 
  ---
  _Note_ : 
  Using `Deduce using time` here save us one step by associating the points to their respective trajectories, it is based on timestamp
  ---
 
+Your blocks are now ready! 👌
 
 
 ### Boresight calibration of the scanner system (calibration data set)
