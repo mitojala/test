@@ -240,7 +240,7 @@ To check that it went well, use the project tool to draw them onto the dgn.
 
 #### Points import
 
-As you can seeon the project window, no file is assiated with the blocks. To do this you need to import the point files into the project. This will create fbi files in the project folder, maybe transforming the coordinate system if asked, and write the blocks metadata into the project file (*.prj).
+As you can see on the project window, no file is associated with the blocks. To do this you need to import the point files into the project. This will create fbi files in the project folder, maybe transforming the coordinate system if asked, and write the blocks metadata into the project file (*.prj).
 
 ![Saveproject2](img/screenshot39.png)
 
