@@ -210,8 +210,21 @@ Here you have to select the attributes you want to be saved with your project. I
  You can chose the location of different important project folders. For your first project, the closer to the default parameter would be the better.
  
  For the block size. We went through the block definition earlier so we will not use these default parameters, you can let them as they are.
-
  
+ #### Saving the project
+ 
+ As the project definition is done, we will save it. This has to be done after every big step.
+ 
+ ![Saveproject](img/screenshot37.png)
+
+ ---
+ _Note_ : 
+ You can save the project anywhere but, as by default the data will be saved in the same folder, we prefer to use a folder name like Laser01, the number referring to your project step.
+ ---
+
+  ![Saveproject2](img/screenshot38.png)
+ 
+
 ### Boresight calibration of the scanner system (calibration data set)
 * separate training part with 'Calib' data set
 
