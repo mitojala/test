@@ -23,7 +23,7 @@ Overview user interfaces
 
 ## Set up a project in TerraScan
 
-The project in Terrascan is a metadata file allowing you to associate locations to your data, your trajectories etc.. and some other parameters so that that can be saved, transfered, reloaded and documented more easily.
+The project in Terrascan is a metadata file allowing you to associate locations to your data, your trajectories etc.. and some other parameters so that that can be saved, transferred, reloaded and documented more easily.
 As soon as you start to work properly in a production project, it should be defined. 
 
 A project requires most of the time to set 5 elements :
@@ -78,7 +78,7 @@ Your coordinate system being set, it is time to visualize and get familiar with 
 
 #### Trajectories
 
-A lot of TerraScan and TerraMatch tools, specialy during the matching process, need the flight trajectories.
+A lot of TerraScan and TerraMatch tools, specially during the matching process, need the flight trajectories.
 
 ##### Import Trajectories
 
