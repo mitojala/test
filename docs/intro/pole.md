@@ -147,7 +147,7 @@ A lot of TerraScan and TerraMatch tools, specialy during the matching process, n
  Our subset is ready and you checked that the trajectories are well related.
  ---
  
- #### Block Definition
+ #### Block Limit Definition
  
 To work properly, we will devide our project area into different blocks. It will allow to test in one block and then execute processes on every blocks independently. That way if an error arises on a specific block, it will not impact the others. The number of points in memory at a time will also be lower.
 
@@ -222,8 +222,25 @@ Here you have to select the attributes you want to be saved with your project. I
  You can save the project anywhere but, as by default the data will be saved in the same folder, we prefer to use a folder name like Laser01, the number referring to your project step.
  ---
 
-  ![Saveproject2](img/screenshot38.png)
+![Saveproject2](img/screenshot38.png)
  
+#### Creating the Blocks
+
+The block limits have already be drawn, we just need to select them and to declare them as the project blocks
+
+![Saveproject2](img/screenshot31.png)
+
+![Saveproject2](img/screenshot32.png)
+
+![Saveproject2](img/screenshot33.png)
+
+To check that it went well, use the project tool to draw them onto the dgn.
+
+![Saveproject2](img/screenshot34.png)
+
+
+#### Points import
+
 
 ### Boresight calibration of the scanner system (calibration data set)
 * separate training part with 'Calib' data set
