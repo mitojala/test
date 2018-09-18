@@ -253,7 +253,7 @@ As you can see on the project window, no file is associated with the blocks. To 
 
 ![Saveproject2](img/screenshot41.png)
 
-In this last windows, we select the transformation as our point cloud is not in the same coordinate system as our vectors.
+In this last window, we select the transformation as our point cloud is not in the same coordinate system as our vectors.
 Please use the transformation we created earlier `UTM 35 → GK 26`
 
  ---
