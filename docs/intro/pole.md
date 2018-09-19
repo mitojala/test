@@ -120,7 +120,7 @@ A lot of TerraScan and TerraMatch tools, specially during the matching process, 
       
    * To check that the split when right and that the trajectories and points timestamps are coherent, we will deduce from which trajectory points come based on the timestamps. 
    
-     1. For this, on the main bar, go to (`Line/Deduce using time`)[http://www.terrasolid.com/guides/tscan/mwdeduceusingtime.php)
+     1. For this, on the main bar, go to [`Line/Deduce using time`](http://www.terrasolid.com/guides/tscan/mwdeduceusingtime.php)
 
      ![deduceTime](img/screenshot16.png)  
 
