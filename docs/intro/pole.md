@@ -15,16 +15,16 @@ In this training project, we will consider you as an aerial lidar data producer.
 Overview user interfaces
   * main menu [TScan](http://www.terrasolid.com/guides/tphoto/mw.php), [TPhoto](http://www.terrasolid.com/guides/tscan/index.html?intromainwindowmenucommands.php)
   * main tool box [TScan](http://www.terrasolid.com/guides/tscan/intromaintoolbox.php)
-  * general tool box [TPhoto] http://www.terrasolid.com/guides/tphoto/tboxgeneral.php), [TModeler](http://www.terrasolid.com/guides/tmodel/tbox_general.php), 
+  * general tool box [TPhoto](http://www.terrasolid.com/guides/tphoto/tboxgeneral.php), [TModeler](http://www.terrasolid.com/guides/tmodel/tbox_general.php), 
   * [TMatch tool box](http://www.terrasolid.com/guides/tmatch/match-tool-box.php), [TMatch tie lines box](http://www.terrasolid.com/guides/tmatch/tie-line-tool-box.php)
   
 ### 3. Project additionnal documents
 * Project DGN file based on a 3d mm seed file, contains project limit, 2d objects and level definition
 * Point class definition file
 
-## Set up a project in [TerraScan](http://www.terrasolid.com/guides/tmatch/index.html)
+## Set up a project in TerraScan
 
-The project in Terrascan is a metadata file allowing you to associate locations to your data, your trajectories etc.. and some other parameters so that that can be saved, transferred, reloaded and documented more easily.
+The [project](http://www.terrasolid.com/guides/tscan/introworkingwithprojects.php) in Terrascan is a metadata file allowing you to associate locations to your data, your trajectories etc.. and some other parameters so that that can be saved, transferred, reloaded and documented more easily.
 As soon as you start to work properly in a production project, it should be defined. 
 
 A project requires most of the time to set 5 elements :
@@ -97,13 +97,13 @@ A lot of TerraScan and TerraMatch tools, specially during the matching process, 
 ##### Cut or split turnarounds of trajectories
    * For matching and tscan processing tasks
    
-      * Draw into design allow us to visualize the trajectories by creating lines in the active level
+      * [Draw into design](http://www.terrasolid.com/guides/tscan/trjdrawintodesign.php) allows us to visualize the trajectories by creating lines in the active level
       
         ![drawIntoDesign1](img/screenshot7.png)         
              
         ![drawIntoDesign1](img/screenshot8.png)
                                                                    
-   * Several options to split trajectories automatically or manually, here we will use a polygon
+   * Several options to [split trajectories automatically or manually](http://www.terrasolid.com/guides/tscan/tool-pulldown-menu.php), here we will use a polygon
       
       1. Draw polygon around project area
       
