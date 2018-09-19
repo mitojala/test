@@ -13,13 +13,14 @@ In this training project, we will consider you as an aerial lidar data producer.
 * trajectory information in text file,  coordinates in GK 26, orthometric heights
 ### 2. ALS calibration : Calib data set
 Overview user interfaces
-  * main menu TScan, TPhoto
-  * main tool bar TScan, TPhoto, TModeler, TMatch
+  * main menu [TScan](http://www.terrasolid.com/guides/tphoto/mw.php), [TPhoto](http://www.terrasolid.com/guides/tscan/index.html?intromainwindowmenucommands.php)
+  * main tool box [TScan](http://www.terrasolid.com/guides/tscan/intromaintoolbox.php)
+  * general tool box [TPhoto] http://www.terrasolid.com/guides/tphoto/tboxgeneral.php), [TModeler](http://www.terrasolid.com/guides/tmodel/tbox_general.php), 
+  * [TMatch tool box](http://www.terrasolid.com/guides/tmatch/match-tool-box.php), [TMatch tie lines box](http://www.terrasolid.com/guides/tmatch/tie-line-tool-box.php)
+  
 ### 3. Project additionnal documents
 * Project DGN file based on a 3d mm seed file, contains project limit, 2d objects and level definition
 * Point class definition file
-
-
 
 ## Set up a project in [TerraScan](http://www.terrasolid.com/guides/tmatch/index.html)
 
@@ -49,14 +50,14 @@ Open the DGN file in `<trainingFolder>/dgn` via microstation so that we can star
 
 The first step for every process in TerraScan consists in setting the coordinate system. As trajectories and/or end product might be in different coordinate systems, we will show you how to activate a coordinate system and how to set a transformation. 
 
-  * settings for coordinate systems
+  * [settings for coordinate systems](http://www.terrasolid.com/guides/tscan/tooldefinecoordinatesetup.php)
      * activate Finnish `ETRS-TM35GK and ETRS GK and UTM North zone 35`
      
   ![imsetCoordSys1](img/screenshot.png)
   
   ![setCoordSys2](img/screenshot2.png) 
   
-  * define transformation
+  * [define transformation](http://www.terrasolid.com/guides/tscan/introcoordinatetransformations.php?zoom_highlightsub=transformation)
      * projection change, `UTM 35 → GK 26, modify: xyz`
      
 ![defTransf1](img/screenshot3.png)
@@ -68,7 +69,7 @@ The first step for every process in TerraScan consists in setting the coordinate
 
 Your coordinate system being set, it is time to visualize and get familiar with your raw data.
 
- * In the main menu, go to `File/Read points`
+ * In the main menu, go to [`File/Read points`](http://www.terrasolid.com/guides/tscan/mwreadpoints.php?zoom_highlightsub=read+points)
 
 ![readPoints](img/screenshot14.png)
 
@@ -82,8 +83,8 @@ A lot of TerraScan and TerraMatch tools, specially during the matching process, 
 
 ##### Import Trajectories
 
-* raw file formats, format definition in settings
-* set directory (trajectory/)
+* raw file formats, [format definition](http://www.terrasolid.com/guides/tscan/setfileformats_usertrajectoryformats.php) in settings
+* [set directory (trajectory/)](http://www.terrasolid.com/guides/tscan/toolmanagetrajectories.php) 
    
    ![trajDirectory](img/screenshot5.png)
 
