@@ -176,7 +176,7 @@ There are different ways to design blocks, here we will draw lines dividing our 
   
   #### Point Class definition
   
-In Terrascan, you can create and save your own point class files. Here we will load an existing one:
+In Terrascan, you can create and save [your own point class files](http://www.terrasolid.com/guides/tscan/tooldefineclasses.php). Here we will load an existing one:
 `<trainingFolder>/classes.ptc`
  
 ![section](img/screenshot26.png)  
@@ -190,8 +190,7 @@ In Terrascan, you can create and save your own point class files. Here we will l
 ### Project Formal Definition
 
 
-The project related tools can be found in the main tool bar.
-
+The project related tools can be found in the [main tool box](http://www.terrasolid.com/guides/tscan/intromaintoolbox.php).
 
 ![section](img/screenshot27.png)  
 
@@ -227,7 +226,7 @@ Here you have to select the attributes you want to be saved with your project. I
  
 #### Creating the Blocks
 
-The block limits have already be drawn, we just need to select them and to declare them as the project blocks
+The block boundaries have already be drawn, we just need to select them and to [declare them as the project blocks](http://www.terrasolid.com/guides/tscan/prjaddbyboundaries.php)
 
 ![Saveproject2](img/screenshot31.png)
 
@@ -241,7 +240,7 @@ To check that it went well, use the project tool to draw them onto the dgn.
 
 #### Points import
 
-As you can see on the project window, no file is associated with the blocks. To do this you need to import the point files into the project. This will create fbi files in the project folder, maybe transforming the coordinate system if asked, and write the blocks metadata into the project file (*.prj).
+As you can see on the project window, no file is associated with the blocks. To do this you need to [import the point files into the project](http://www.terrasolid.com/guides/tscan/prjimportpointsintoproject.php). This will create fbi files in the project folder, maybe transforming the coordinate system if asked, and write the blocks metadata into the project file (*.prj).
 
 ![Saveproject2](img/screenshot39.png)
 
