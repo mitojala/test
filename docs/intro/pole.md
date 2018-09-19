@@ -156,7 +156,7 @@ There are different ways to design blocks, here we will draw lines dividing our 
 
 * To create these lines, active the level 9 and use microstation smart line tool
 
- ![section](img/screenshot21.png){ width=10% }
+ ![section](img/screenshot21.png)
  
  ![section](img/screenshot22.png)   
 
@@ -262,7 +262,7 @@ Please use the transformation we created earlier `UTM 35 → GK 26`
  Using `Deduce using time` here save us one step by associating the points to their respective trajectories, it is based on timestamp
  ---
 
-Your blocks are now ready! 👌
+Your blocks are now ready!
 
 
 ## Boresight calibration of the scanner system using [TerraMatch](http://www.terrasolid.com/guides/tmatch/index.html)
@@ -274,6 +274,7 @@ To help the matching tools, manual or automatic, we will here classify the data.
 #### Macro : automatic steps
 
 The [macro files](http://www.terrasolid.com/guides/tscan/intromacroactions.php?zoom_highlightsub=macro) are text files defining a list of tasks with their parameters. The use of those macros helps a lot, specialy on big project because they can be applied on a set of blocks or on a set of blocks once they are validated. You can also distribute their execution between computers using [TerraSlave](http://www.terrasolid.com/guides/tscan/terraslavequickguide.php?zoom_highlightsub=terraslave). 
+
 
 
 
