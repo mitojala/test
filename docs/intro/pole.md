@@ -21,7 +21,7 @@ Overview user interfaces
 
 
 
-## Set up a project in TerraScan
+## Set up a project in [TerraScan](http://www.terrasolid.com/guides/tmatch/index.html)
 
 The project in Terrascan is a metadata file allowing you to associate locations to your data, your trajectories etc.. and some other parameters so that that can be saved, transferred, reloaded and documented more easily.
 As soon as you start to work properly in a production project, it should be defined. 
@@ -264,8 +264,16 @@ Please use the transformation we created earlier `UTM 35 → GK 26`
 Your blocks are now ready! 👌
 
 
-Boresight calibration of the scanner system (calibration data set)
-==============
+## Boresight calibration of the scanner system using [TerraMatch](http://www.terrasolid.com/guides/tmatch/index.html)
+
+### Data preparation : Classification
+
+To help the matching tools, manual or automatic, we will here classify the data. By example, during the [tie lines search](http://www.terrasolid.com/guides/tmatch/search-tie-lines.php?zoom_highlightsub=tie+lines), it speeds up the calculation if you compare only the points of some classes.
+
+#### Macro : automatic steps
+
+The [macro files](http://www.terrasolid.com/guides/tscan/intromacroactions.php?zoom_highlightsub=macro) are text files defining a list of tasks with their parameters. The use of those macros helps a lot, specialy on big project because they can be applied on a set of blocks or on a set of blocks once they are validated. You can also distribute their execution between computers using [TerraSlave](http://www.terrasolid.com/guides/tscan/terraslavequickguide.php?zoom_highlightsub=terraslave). 
+
 
 
 
