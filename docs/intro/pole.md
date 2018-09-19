@@ -204,7 +204,7 @@ Here you have to select the attributes you want to be saved with your project. I
  
  ---
  _Warning_ : 
- The storage format is here really important. Only the `Fast Binary` default one support all the attributes!
+ The storage format is here really important. Only the `Fast Binary`, the default one, supports all the attributes!
  ---
  
  You can chose the location of different important project folders. For your first project, the closer to the default parameter would be the better.
@@ -221,6 +221,7 @@ Here you have to select the attributes you want to be saved with your project. I
  _Note_ : 
  You can save the project anywhere but, as by default the data will be saved in the same folder, we prefer to use a folder name like Laser01, the number referring to your project step.
  ---
+ 
 
 ![Saveproject2](img/screenshot38.png)
  
