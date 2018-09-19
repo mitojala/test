@@ -103,7 +103,7 @@ A lot of TerraScan and TerraMatch tools, specially during the matching process, 
              
         ![drawIntoDesign1](img/screenshot8.png)
                                                                    
-   * Several options to [split trajectories automatically or manually](http://www.terrasolid.com/guides/tscan/tool-pulldown-menu.php), here we will use a polygon
+   * Several options to [split trajectories automatically or manually](http://www.terrasolid.com/guides/tscan/tool-pulldown-menu.php), here we will [use a polygon](http://www.terrasolid.com/guides/tscan/trjdeletebypolygons.php).
       
       1. Draw polygon around project area
       
@@ -120,11 +120,11 @@ A lot of TerraScan and TerraMatch tools, specially during the matching process, 
       
    * To check that the split when right and that the trajectories and points timestamps are coherent, we will deduce from which trajectory points come based on the timestamps. 
    
-     1. For this, on the main bar, go to `Line/Deduce using time`
+     1. For this, on the main bar, go to (`Line/Deduce using time`)[http://www.terrasolid.com/guides/tscan/mwdeduceusingtime.php)
 
      ![deduceTime](img/screenshot16.png)  
 
-     2. Then we will display the points based on their trajectories
+     2. Then we will [display](http://www.terrasolid.com/guides/tscan/mwdisplaymode.php) the points based on their trajectories
      
    ![displayPoints1](img/screenshot18.png)  
     
@@ -134,7 +134,7 @@ A lot of TerraScan and TerraMatch tools, specially during the matching process, 
    
    ![displayPoints3](img/screenshot17.png)     
     
- * At this stage, you can get familiar with the data through the section and display tools.
+ * At this stage, you can get familiar with the data through the [section](http://www.terrasolid.com/guides/tscan/tboxviewlaser.php) and display tools.
  
     ![section](img/screenshot20.png)   
     
@@ -150,7 +150,7 @@ A lot of TerraScan and TerraMatch tools, specially during the matching process, 
  
  #### Block Limit Definition
  
-To work properly, we will divide our project area into different blocks. It will allow to test in one block and then execute processes on every blocks independently. That way if an error arises on a specific block, it will not impact the others. The number of points in memory at a time will also be lower.
+To work properly, we will divide our project area into different [blocks](http://www.terrasolid.com/guides/tscan/prjpmblock.php). It will allow to test in one block and then execute processes on every blocks independently. That way if an error arises on a specific block, it will not impact the others. The number of points in memory at a time will also be lower.
 
 There are different ways to design blocks, here we will draw lines dividing our project area shape in three parts.
 
@@ -160,7 +160,7 @@ There are different ways to design blocks, here we will draw lines dividing our 
  
  ![section](img/screenshot22.png)   
 
- * Once the lines created, we pick the `Design Block Boundaries`
+ * Once the lines created, we pick the [`Design Block Boundaries`](http://www.terrasolid.com/guides/tscan/tooldesignblockboundaries.php)
  
  ![section](img/screenshot23.png)
  
@@ -170,7 +170,7 @@ There are different ways to design blocks, here we will draw lines dividing our 
   
  ![section](img/screenshot24.png)  
  
- * If the precedent levels are active, you should be able to see the result
+ * If the selected levels are active, you should be able to see the result
   
   ![section](img/screenshot25.png)  
   
