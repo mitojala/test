@@ -156,7 +156,7 @@ There are different ways to design blocks, here we will draw lines dividing our 
 
 * To create these lines, active the level 9 and use microstation smart line tool
 
- ![section](img/screenshot21.png =30x)
+ ![section](img/screenshot21.png){ width=10% }
  
  ![section](img/screenshot22.png)   
 
