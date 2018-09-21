@@ -348,9 +348,18 @@ This time we will run the macro on the whole project. Two points are importants 
  
 ![runMacroWind](img/screenshot52.png)
 
+#### Lines Mismatch Visualization
 
+To visualize the differences between the line, we will use the [Compute distance](http://www.terrasolid.com/guides/tscan/mwcomputedistance.php) tool, in the main window (Tools/Compute distance...).
 
+ ---
+ _Note_ : 
+ Compute distance is a really important tool used in a lot of processes like [Grouping](http://www.terrasolid.com/guides/tscan/mwpmgroup.php)
+ ---
 
+![computeDistance](img/screenshot53.png)
+
+![computeDistance](img/screenshot54.png)
 
 
 ![GIF](img/screenshot.gif)
