@@ -306,6 +306,16 @@ For ALS with low density, the [ground classification](http://www.terrasolid.com/
 
 ![ClassGround](img/screenshot47.png)
 
+ ---
+ _Note_ : 
+ After the macro processing, you will have to go through the points and improve the ground manually if needed.
+ ---
+
+* Classify by height : High vegetation 
+
+
+
+
 
 
 
