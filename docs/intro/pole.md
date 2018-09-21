@@ -331,13 +331,22 @@ Its parameters are pretty straight forward.
 
 ##### Processing the macro
 
+![runMacroTool](img/screenshot50.png)
+
 * Test run : Step by step
 
 First we will do a test run on a **loaded block** step by step using the **Step** button. It will allow you to look at the point cloud evolution (using a display by Class and some sections) and see if a major problem happens. Once this test run is finished, you can [close the loaded points](http://www.terrasolid.com/guides/tscan/mwclosepoints.php) **without saving them**.
 
 * Project run
 
-
+This time we will run the macro on the whole project. Two points are importants :
+ * First, **in the macro definition window**, check the `Process lines separately`. Indeed, we want to compare the ground and the roofs between the lines to get the correction values.
+ 
+![macroDefWin](img/screenshot51.png)
+ 
+ * Second : **in the run macro window**, use points from neighboring blocks so that there won't be any differences in classification between blocks (block edge effects).
+ 
+![runMacroWind](img/screenshot52.png)
 
 
 
