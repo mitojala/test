@@ -6,12 +6,12 @@ In this training project, we will consider you as an aerial lidar data producer.
 
 ## Training data sets
 
-### 1.  Jyväskylä ALS data set
+###  Jyväskylä ALS data set
 * laser data: 21.5.2011, raw data in UTM 35 N, 'ellipsoidal' heights,
 * density about 23 points/m2
 * images from other flight: 23.5.2012, altitude ca. 850 m, data in UTM 35 N
 * trajectory information in text file,  coordinates in GK 26, orthometric heights
-### 2. ALS calibration : Calib data set
+### ALS calibration : Calib data set
 Overview user interfaces
   * main menu [TScan](http://www.terrasolid.com/guides/tphoto/mw.php), [TPhoto](http://www.terrasolid.com/guides/tscan/index.html?intromainwindowmenucommands.php)
   * main tool box [TScan](http://www.terrasolid.com/guides/tscan/intromaintoolbox.php)
