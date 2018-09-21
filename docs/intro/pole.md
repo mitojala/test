@@ -275,7 +275,7 @@ To help the matching tools, manual or automatic, we will here classify the data.
 
 The [macro files](http://www.terrasolid.com/guides/tscan/intromacroactions.php?zoom_highlightsub=macro) are text files defining a list of tasks with their parameters. The use of those macros helps a lot, specialy on big project because they can be applied on a set of blocks or on a set of blocks once they are validated. You can also distribute their execution between computers using [TerraSlave](http://www.terrasolid.com/guides/tscan/terraslavequickguide.php?zoom_highlightsub=terraslave). 
 
-##### 01_prepare_match.mac
+##### A look at the steps : 01_prepare_match.mac
 
 Let's go through the steps in the macro prepared for this project. To do this, we use Tools/Macros... in the main menu. 
 
@@ -328,6 +328,17 @@ Now that all the high points are in the high vegetation class, we will classify 
 ![ClassBuildings](img/screenshot49.png)
 
 Its parameters are pretty straight forward.
+
+##### Processing the macro
+
+* Test run : Step by step
+
+First we will do a test run on a **loaded block** step by step using the **Step** button. It will allow you to look at the point cloud evolution (using a display by Class and some sections) and see if a major problem happens. Once this test run is finished, you can [close the loaded points](http://www.terrasolid.com/guides/tscan/mwclosepoints.php) **without saving them**.
+
+* Project run
+
+
+
 
 
 
