@@ -313,9 +313,14 @@ For ALS with low density, the [ground classification](http://www.terrasolid.com/
 
 * Classify by height : High vegetation 
 
+All the matchimg corrections can not be easily found using only the ground. We will also need some aerial planar surfaces such as wall or building roofs. To get these aerial points, we will first put them in the high vegetation class. It will lower the amount of points during the planarity check algorithm. In general, always try to minimize the amount of points when using complex and ressource demanding features of TerraScan.
 
+The tool used here is classify [Height from ground](http://www.terrasolid.com/guides/tscan/crbyheigthfromground.php).
 
-![ClassGround](img/screenshot48.png)
+![ClassHeightFromGround](img/screenshot48.png)
+
+As you can see, here the points from default class(1) higher than 2 meters are put to the High Vegetation class(5)
+
 
 
 
