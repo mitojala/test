@@ -366,7 +366,7 @@ To visualize the differences between the line, we will use the [Compute distance
 Using the `Line average z` parameter allows us to get a bigger value associated with the points the further appart are the lines. It will be of a huge help.
 
 * Distance display
-
+ 
 
 ![GIF](img/screenshot.gif)
 
