@@ -292,15 +292,23 @@ The first steps consists in filtering the water points, we do that because they 
 
 We could use the intensity return or color on some dataset to do it but here, the water area have already be vectorized in our DGN (level 12). So we apply the classification tool : [By polygons](http://www.terrasolid.com/guides/tscan/crbypolygons.php?zoom_highlightsub=classify+by+polygons) with the macro step [Classify points](http://www.terrasolid.com/guides/tscan/maclassifypoints.php) and set their classification from 1 (Default) to 9 (Water).  
 
-![Macro](img/screenshot45.png)
+![ClassbyPolygons](img/screenshot45.png)
 
 * Filter low points
 
 There are always some errors in the points with isolated incoherent elevations. This time we will use the classify [Low points](http://www.terrasolid.com/guides/tscan/crlowpoints.php) tool to get rid of them. We sometimes also use the [Isolated points](http://www.terrasolid.com/guides/tscan/crisolatedpoints.php) tool. This step will limit the errors on the ground classification steps.
 
-![Macro](img/screenshot46.png)
+![ClassLowPoints](img/screenshot46.png)
 
 * Ground processing
+
+For ALS with low density, the [ground classification](http://www.terrasolid.com/guides/tscan/crground.php) tool works really well. Ground definition is a really important aspect of Lidar processing, it is not only used to get end products like the one you can produce with TerraModeler, but also to classify other elements/objets and to do the matching. You should look through the user guide to properly understand how the tool works.
+
+![ClassGround](img/screenshot47.png)
+
+
+
+
 
 ![GIF](img/screenshot.gif)
 
