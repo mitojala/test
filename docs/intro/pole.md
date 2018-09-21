@@ -275,10 +275,30 @@ To help the matching tools, manual or automatic, we will here classify the data.
 
 The [macro files](http://www.terrasolid.com/guides/tscan/intromacroactions.php?zoom_highlightsub=macro) are text files defining a list of tasks with their parameters. The use of those macros helps a lot, specialy on big project because they can be applied on a set of blocks or on a set of blocks once they are validated. You can also distribute their execution between computers using [TerraSlave](http://www.terrasolid.com/guides/tscan/terraslavequickguide.php?zoom_highlightsub=terraslave). 
 
+##### 01_prepare_match.mac
 
+Let's go through the steps in the macro prepared for this project. To do this, we use Tools/Macros... in the main menu. 
 
+![Macro1](img/screenshot42.png)
 
+![Macro2](img/screenshot43.png)
 
+![Macro3](img/screenshot44.png)
+
+As you can see, our preprocessing consists in 5 steps. We will now explain them in details.
+
+* Filter water points
+The first steps consists in filtering the water points, we do that because they will not help to improve the matching and will slow the calculation.
+
+We could use the intensity return or color on some dataset to do it but here, the water area have already be vectorized in our DGN (level 12). So we apply the classification tool : [By polygons](http://www.terrasolid.com/guides/tscan/crbypolygons.php?zoom_highlightsub=classify+by+polygons) with the macro step [Classify points](http://www.terrasolid.com/guides/tscan/maclassifypoints.php) and set their classification from 1 (Default) to 9 (Water).  
+
+![Macro](img/screenshot45.png)
+
+* Filter low points
+
+There are always some error in the points with some with incoherent elevations. This time we will use the classify [Low points](http://www.terrasolid.com/guides/tscan/crlowpoints.php) tool. We sometimes also use the [Isolated points](http://www.terrasolid.com/guides/tscan/crisolatedpoints.php) tool. This step will limit the errors on the ground classification steps.
+
+![Macro](img/screenshot46.png)
 
 
 ![GIF](img/screenshot.gif)
