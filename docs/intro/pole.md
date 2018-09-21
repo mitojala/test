@@ -350,6 +350,8 @@ This time we will run the macro on the whole project. Two points are importants 
 
 #### Lines Mismatch Visualization
 
+* Compute distance
+
 To visualize the differences between the line, we will use the [Compute distance](http://www.terrasolid.com/guides/tscan/mwcomputedistance.php) tool, in the main window (Tools/Compute distance...).
 
  ---
@@ -362,6 +364,8 @@ To visualize the differences between the line, we will use the [Compute distance
 ![computeDistance](img/screenshot54.png)
 
 Using the `Line average z` parameter allows us to get a bigger value associated with the points the further appart are the lines. It will be of a huge help.
+
+* Distance display
 
 
 ![GIF](img/screenshot.gif)
