@@ -315,6 +315,7 @@ For ALS with low density, the [ground classification](http://www.terrasolid.com/
 
 
 
+![ClassGround](img/screenshot48.png)
 
 
 
