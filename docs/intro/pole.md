@@ -296,10 +296,11 @@ We could use the intensity return or color on some dataset to do it but here, th
 
 * Filter low points
 
-There are always some error in the points with some with incoherent elevations. This time we will use the classify [Low points](http://www.terrasolid.com/guides/tscan/crlowpoints.php) tool. We sometimes also use the [Isolated points](http://www.terrasolid.com/guides/tscan/crisolatedpoints.php) tool. This step will limit the errors on the ground classification steps.
+There are always some errors in the points with isolated incoherent elevations. This time we will use the classify [Low points](http://www.terrasolid.com/guides/tscan/crlowpoints.php) tool to get rid of them. We sometimes also use the [Isolated points](http://www.terrasolid.com/guides/tscan/crisolatedpoints.php) tool. This step will limit the errors on the ground classification steps.
 
 ![Macro](img/screenshot46.png)
 
+* Ground processing
 
 ![GIF](img/screenshot.gif)
 
