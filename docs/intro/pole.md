@@ -366,7 +366,22 @@ To visualize the differences between the line, we will use the [Compute distance
 Using the `Line average z` parameter allows us to get a bigger value associated with the points the further appart are the lines. It will be of a huge help.
 
 * Distance display
- 
+
+In the Display mode, we will use the distance we just prepared. Be carefull to follow the settings :
+
+* min value `-0.15` m
+* max value `0.15` m
+* use depth
+* class : `ground and building`
+* apply to `view 1`
+
+![displayDist1](img/screenshot55.png)
+![displayDist2](img/screenshot56.png)
+![displayDist3](img/screenshot57.png)
+![displayDist4](img/screenshot58.png)
+
+
+
 
 ![GIF](img/screenshot.gif)
 
