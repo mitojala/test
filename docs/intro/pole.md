@@ -521,3 +521,9 @@ Finally, like last time, we will measure the mismatch between the points, as the
 
 Our matching is done! Now the classification can start.
 
+## Ground classification and delivery products (TerraScan and TerraModeler)
+
+### Cleaning the dataset : Cut Overlap
+
+Even if we improved the matching between the lines, their overlap create a noise effect and densituy variation. To solve this issue, we will [cut the overlap](http://www.terrasolid.com/guides/tscan/mwcutoverlap.php), moving the ovelapping points to the overlap class.
+
