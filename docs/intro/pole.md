@@ -394,9 +394,9 @@ Second example :
 
 To get a global idea about the mismatch, the measure-match tool can be used. It generate a report summarizing the differences between a mean surface and the one generated from each line. Of course we will use our ground class for the best compararison.
 
-![measureMatch](img/screenshot62.png)
+![measureMatch1](img/screenshot62.png)
 
-![measureMatch](img/screenshot63.png)
+![measureMatch2](img/screenshot63.png)
 
 ### Matching
 
@@ -404,14 +404,56 @@ To get a global idea about the mismatch, the measure-match tool can be used. It 
 
 #### Define tie lines
 
-TerraMatch need us to define where to look for common features between the lines. [Define tie lines]() is the dedicated tool for this.
+TerraMatch need us to define where to look for common features between the lines. [Define tie lines](http://www.terrasolid.com/guides/tmatch/define-tie-lines.php) is the dedicated tool for this.
 Specifying maximum gap between the lines, the point class to use and the other parameters will allow a faster and better result.
+
+![defineTieLines1](img/screenshot65.png)
+
 Here we will set those parameters :
 * laser time gap, time difference between different lines at the same location : 10s
 * max error xy, maximum difference between lines in horizontal positioning : ´0.30´
 * max error z, maximum difference between lines in elevation positioning : ´0.50´
 * fit tolerance, estimation of noise level in the data : ´0.12´
 * point class : `ground`
+
+![defineTieLines2](img/screenshot64.png)
+
+Now that we have set where TerraMatch should look, we can decide the kind of feature we want to use to generate tie lines. This is done through the tool : [search tie lines](http://www.terrasolid.com/guides/tmatch/search-tie-lines.php?zoom_highlightsub=search+tie+lines).
+
+ ---
+ _Note_ : 
+The tie lines can also be defined manually!
+ ---
+
+![searchTieLines1](img/screenshot66.png)
+
+![searchTieLines2](img/screenshot67.png)
+
+With this setting, we are looking for tie lines in ground surface through the change of slope. A feature will be an area with the same elevation fluctuations. To be more precise, TerraMatch will look for 3m long and 1m large area with the same slope (1 degree deviation) in the different lines.
+
+To get a better calibration, tie lines above ground are important. We will look for them on flat building roofs. As those points are in the building class (6), we need first to update the tie lines settings.
+
+![defineTieLines3](img/screenshot68.png)
+
+The we use again the search tie lines tool, completing the tie line list.
+
+![searchTieLines3](img/screenshot69.png)
+
+The vector list can now be saved.
+
+![saveTieLines](img/screenshot70.png)
+
+#### Find correction parameters
+
+All those vectors are the result of different errors during the acquisition process. Part of them are systematic errors, part of the vectors are from varying issue, like IMU drift or from temporary issue like a bad GPS coverage during a short period of time.
+
+To solve all those problems, wh will go from the most systematic and global errors to the more local ones. The approach would be the same with mobile data but with more local variations.
+
+##### Find boresight parameters
+
+The boresight calibration errora should have been minimized by the calibration flight but there are always some residues. They are born from the delta between the head, roll, pich angled measured and the real ones.
+
+![boreSight](img/screenshot70.png)
 
 
 
