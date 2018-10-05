@@ -469,5 +469,15 @@ We will not apply those new parameters.
 
 ##### Find inter-lines corrections
 
+We will now try to minimize the mismatch by applying different parameters to each line. Again we will use Find Tie Line Match but this time with Solve for ´individual lines´. As z and roll are the easiest parameters to improve and often the biggest errors, we will try find a delta z and a roll angle for each line which improve the overall coherence between the lines.
+
+![findTieLineMatch4](img/screenshot75.png)
+
+These parameters improving the mismatch in the tie lines from around 5cm to around 1cm, we will apply them. To do this, we save the correction file and we use the [apply correction tool](http://www.terrasolid.com/guides/tmatch/apply-correction.php).
+
+![applyCorrection1](img/screenshot76.png)
+
+![applyCorrection2](img/screenshot76.png)
+
 
 
