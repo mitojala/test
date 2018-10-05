@@ -511,6 +511,13 @@ Finally we can apply the correction to the project points. To pay it safer, we w
  
 ![distBeforeCorr](img/screenshot79.png)
 
-![distAfterCorr](img/screenshot79.png)
+![distAfterCorr](img/screenshot80.png)
 
+Finally, like last time, we will measure the mismatch between the points, as the correction was calculated only based on the tie lines.
+
+![measureMatch3](img/screenshot81.png)
+
+![measureMatch4](img/screenshot82.png)
+
+Our matching is done! Now the classification can start.
 
