@@ -453,8 +453,21 @@ To solve all those problems, wh will go from the most systematic and global erro
 
 The boresight calibration errora should have been minimized by the calibration flight but there are always some residues. They are born from the delta between the head, roll, pich angled measured and the real ones.
 
-![boreSight](img/screenshot70.png)
+![boreSight](img/screenshot71.png)
 
+TerraMatch will try to find the best delta to apply to these angles to minimize the vector lenght between the features. To calculate a new head, pitch, roll proposition, we use [Find Tie Line Match](http://www.terrasolid.com/guides/tmatch/find-tie-line-match.php).
+
+![findTieLineMatch](img/screenshot72.png)
+
+![findTieLineMatch](img/screenshot73.png)
+
+On our dataset, the calibration was already quite good, we can see that the improved angles are not much different from the original ones, the tie line vector length they would generate would not be much better that the existing ones (comparaison between Starting and Final average mismatchs).
+
+![findTieLineMatch3](img/screenshot74.png)
+
+We will not apply those new parameters.
+
+##### Find inter-lines corrections
 
 
 
