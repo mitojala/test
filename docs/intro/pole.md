@@ -439,6 +439,11 @@ The we use again the search tie lines tool, completing the tie line list.
 
 ![searchTieLines3](img/screenshot69.png)
 
+ ---
+ _Note_ : 
+We can check if all tie lines found automatically represent "real features", or at least coherant by using the [find worst](http://www.terrasolid.com/guides/tmatch/find-worst.php) tool in the _Line_ menu and delete tie lines which appear wrong with [delete line](http://www.terrasolid.com/guides/tmatch/delete-line.php).
+ ---
+
 The vector list can now be saved.
 
 ![saveTieLines](img/screenshot70.png)
@@ -465,6 +470,12 @@ On our dataset, the calibration was already quite good, we can see that the impr
 
 ![findTieLineMatch3](img/screenshot74.png)
 
+
+ ---
+ _Warning_ : 
+Beware of the `Number of usable observations` part of the report. If you use too few tie lines, the new parameters are not worth much. Their space repartition is also a factor. 
+ ---
+
 We will not apply those new parameters.
 
 ##### Find inter-lines corrections
@@ -473,11 +484,33 @@ We will now try to minimize the mismatch by applying different parameters to eac
 
 ![findTieLineMatch4](img/screenshot75.png)
 
-These parameters improving the mismatch in the tie lines from around 5cm to around 1cm, we will apply them. To do this, we save the correction file and we use the [apply correction tool](http://www.terrasolid.com/guides/tmatch/apply-correction.php).
+![findTieLineMatch5](img/screenshot76.png)
 
-![applyCorrection1](img/screenshot76.png)
+These parameters improving the mismatch in the tie lines from around 5cm to around 1cm, we will apply them. 
 
-![applyCorrection2](img/screenshot76.png)
+##### Apply corrections
 
+* Correction of the tie lines
+To do this, we save the correction file and we use the [apply correction tool](http://www.terrasolid.com/guides/tmatch/apply-correction.php).
+
+![applyCorrection1](img/screenshot77.png)
+
+![applyCorrection2](img/screenshot78.png)
+
+Note that we apply the correction to the tie lines first. This will allow us to see if the correction implied an unwanted local increase of the error despite the better average as we do not have any dispertion indicator. 
+
+* Correction of the points
+
+Finally we can apply the correction to the project points. To pay it safer, we will save the corrected data to a new folder. This will also generate a new project that we will open right after the computation.
+
+![applyCorrection3](img/screenshot81.png)
+
+ * Visualization
+ 
+ After having opened the project in folder laser02 and loaded a block, we can recompute the distance. Using the visualization by distance seen previously, we can judge the improvement.
+ 
+![distBeforeCorr](img/screenshot79.png)
+
+![distAfterCorr](img/screenshot79.png)
 
 
