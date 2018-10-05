@@ -488,7 +488,7 @@ We will now try to minimize the mismatch by applying different parameters to eac
 
 These parameters improving the mismatch in the tie lines from around 5cm to around 1cm, we will apply them. 
 
-##### Apply corrections
+#### Apply corrections
 
 * Correction of the tie lines
 To do this, we save the correction file and we use the [apply correction tool](http://www.terrasolid.com/guides/tmatch/apply-correction.php).
