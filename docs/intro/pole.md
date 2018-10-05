@@ -383,12 +383,20 @@ In the Display mode, we will use the distance we just prepared. Be carefull to f
 We set the Display by flight line on view 2 and then we can use the section tool see the matching issues.
 
 First example :
-![displayMatchDiff1](img/screenshot59.png)
-![displayMatchDiff2](img/screenshot60.png)
+![displayMatchDiff1](img/screenshot60.png)
 
 Second example :
-![displayMatchDiff3](img/screenshot61.png)
-![displayMatchDiff4](img/screenshot32.png)
+![displayMatchDiff2](img/screenshot61.png)
 
 ![GIF](img/screenshot.gif)
+
+* Statistics : [measure match](http://www.terrasolid.com/guides/tmatch/measure-match.php)
+
+To get a global idea about the mismatch, the measure-match tool can be used. It generate a report summarizing the differences between a mean surface and the one generated from each line. Of course we will use our ground class for the best compararison.
+
+![measureMatch](img/screenshot62.png)
+
+![measureMatch](img/screenshot63.png)
+
+
 
