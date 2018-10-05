@@ -398,5 +398,21 @@ To get a global idea about the mismatch, the measure-match tool can be used. It 
 
 ![measureMatch](img/screenshot63.png)
 
+### Matching
+
+[Two approaches](http://www.terrasolid.com/guides/tmatch/methods-of-line-adjustment.php) are available to do the matching in TerraMatch. The first and "classical" one consists in trying to change parameters to optimize the surfaces differences (same as in measure match). This approach is now replaced most of the time by a tie lines approach. It consist in finding a fair number of features in the point clouds, generate vectors between the same objects in the different lines and finally minimizing those vectors. This approached have proved to be way faster and more flexible, specially with mobile data where fluctuations can be very frequent. We will follow this approach.
+
+#### Define tie lines
+
+TerraMatch need us to define where to look for common features between the lines. [Define tie lines]() is the dedicated tool for this.
+Specifying maximum gap between the lines, the point class to use and the other parameters will allow a faster and better result.
+Here we will set those parameters :
+* laser time gap, time difference between different lines at the same location : 10s
+* max error xy, maximum difference between lines in horizontal positioning : ´0.30´
+* max error z, maximum difference between lines in elevation positioning : ´0.50´
+* fit tolerance, estimation of noise level in the data : ´0.12´
+* point class : `ground`
+
+
 
 
