@@ -575,7 +575,7 @@ After testing, we launch the macro on the project with `1m`  from neighbour bloc
 
 ### Ground classification
 
-Once again we will classify the ground but this time more carefully as the ground class will be the base of our DEM. As the ground classification algorithm takes into acount the local low points to triangulate its surface, we will preprocess the data to limit the number of bad points created by multi returns or other issues. After our ground classification, some points will be wrongly put in the ground class, we will also add a step to clean this up.
+Once again we will classify the ground but this time more carefully as the ground class will be the base of our DEM. As the ground classification algorithm takes into acount the local low points to triangulate its surface, we will preprocess the data to limit the number of bad points created by multi returns or other issues. After our ground classification, some points will be wrongly put in the ground class, we will also add a step to clean this up. All the next steps should be added in a macro.
 
 #### Preprocessing 
 
@@ -595,13 +595,11 @@ This algorithm classify points isolated points, "isolated" here means that there
 
 ![isolatedPointsMacro](img/screenshot93.png)
 
-#### Ground classification algorithm
+* step 3 :  Ground classification algorithm
 
-......
 ![groundClassifMacro](img/screenshot94.png) 
 
-#### Postprocessing
-
+* step 4 : Postprocessing
 To clean up a bit the ground class, we will use the [classify below surface](http://www.terrasolid.com/guides/tscan/crbelowsurface.php) tool. This tool exclude points which do not fit the local plane surface. This tool calculate the average elevation variation on the 25 neigbouring points. Here we put the multiplication factor to `3` and the limit to `10`cm.
 Imagine that the average variation is _4cm_, if our point is _15cm_ below its neigbours, the point will be put to the low point class because `4X3 < 15` and `15 > 10`. Both conditions need to be respected.
 
@@ -609,5 +607,7 @@ Imagine that the average variation is _4cm_, if our point is _15cm_ below its ne
 
 The "implied" ground surface will be smoother and a bit higher.
 
+* Running the macro
+After testing, we launch the macro on the project with `200m`  from neighbour blocks points. The limit the edge effect.
 
 
