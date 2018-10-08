@@ -575,20 +575,31 @@ After testing, we launch the macro on the project with `1m`  from neighbour bloc
 
 ### Ground classification
 
-Once again we will classify the ground but this time me carefully. As the ground classification algorithm takes into acount the local low points to triangulate its surface, we will preprocess the data to limit the number of bad points created by multi returns or other issues.
+Once again we will classify the ground but this time more carefully as the ground class will be the base of our DEM. As the ground classification algorithm takes into acount the local low points to triangulate its surface, we will preprocess the data to limit the number of bad points created by multi returns or other issues. After our ground classification, some points will be wrongly put in the ground class, we will also add a step to clean this up.
 
-step 1 and 2 : low points
+#### Preprocessing 
+
+* step 1 and 2 : [low points]
 Here points far lower that the average in their area are put to the low points class. 
 
- ![lowPointsMacro](img/screenshot91.png)
+ ![lowPointsMacro1](img/screenshot91.png)
  
- ![lowPointsMacro](img/screenshot92.png)
+ ![lowPointsMacro2](img/screenshot92.png)
 
 ---
  _Note_ : 
 We use the same action twice with different parameters. It is often a good idea to do so extensively for the ground preprocessing, we could also have done it with the folowing steps but we limited these due to training considerations to let some points for manual correction. 
  ---
- 
 
- 
- 
+This algorithm classify points isolated points, "isolated" here means that there is no other point in a given 3d radius. With the chosen ´5m´ radius, these points are most likely bad points. Of course we could also get rid of power lines points or tree points by mistake if our point density is not high enough using this step.
+
+![isolatedPointsMacro](img/screenshot93.png)
+
+#### Ground classification algorithm
+
+ image and parameters to be changed.
+![groundClassifMacro](img/screenshot94.png) 
+
+#### Postprocessing
+
+To clean up a bit the ground class, we will use the [classify below surface](http://www.terrasolid.com/guides/tscan/crbelowsurface.php) tool. This tool exclude points which do not fit the local plane surface. 
