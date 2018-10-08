@@ -610,4 +610,7 @@ The "implied" ground surface will be smoother and a bit higher.
 * Running the macro
 After testing, we launch the macro on the project with `200m`  from neighbour blocks points. The limit the edge effect.
 
+### Classify water areas inside shapes
+
+
 
