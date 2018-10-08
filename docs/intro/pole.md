@@ -515,9 +515,9 @@ Finally we can apply the correction to the project points. To pay it safer, we w
 
 Finally, like last time, we will measure the mismatch between the points, as the correction was calculated only based on the tie lines.
 
-![measureMatch3](img/screenshot81.png)
+![measureMatch3](img/screenshot82.png)
 
-![measureMatch4](img/screenshot82.png)
+![measureMatch4](img/screenshot83.png)
 
 Our matching is done! Now the classification can start.
 
@@ -525,5 +525,52 @@ Our matching is done! Now the classification can start.
 
 ### Cleaning the dataset : Cut Overlap
 
-Even if we improved the matching between the lines, their overlap create a noise effect and densituy variation. To solve this issue, we will [cut the overlap](http://www.terrasolid.com/guides/tscan/mwcutoverlap.php), moving the ovelapping points to the overlap class.
+Even if we improved the matching between the lines, their overlap create a noise effect and density variation. To solve this issue, we will [cut the overlap](http://www.terrasolid.com/guides/tscan/mwcutoverlap.php), moving the ovelapping points to the overlap class.
+
+#### Cross lines : use when needed
+
+Usually cross lines, which are used for matching, are also removed. There are several ways to identify the cross lines like `display by trajectory` followed by identify on the [manage trajectories window](http://www.terrasolid.com/guides/tscan/toolmanagetrajectories.php). Here we will not completely remove the cross line but use its points only when they are the only ones available on some areas.
+
+To achieve this kind of cleaning, we have, in the manage trajectores window, to set the quality of the cross line to `Poor` before  the cut go ovelap tool.
+
+![lineQuality1](img/screenshot84.png)
+
+![lineQuality2](img/screenshot85.png)
+
+#### Cut by offset : limit overall overlap
+
+Cut overlap by offset is a good tool to improve limit the global overlap. It pick the points from the line with the most vertical angle on an area. The quality of those is most of the time better and the density becomes uniform.
+
+#### Macro implementation
+
+We will apply those two actions through one macro step : [Cut overlap](http://www.terrasolid.com/guides/tscan/macutoverlap.php?). Going through the main window in the tool menu, we create our new macro.
+We implement the two actions in two different steps. The will allow us to test them on the loaded points through the `Step` button. Once validated, we will save this macro and apply it on the the project points through the project window.
+
+* Step one : all points to class 1
+It is often a good solution to clean our classification after the matching, as we will reclassify them from scratch. To do this we use the classify points action, putting all the points to default class (1).
+
+![classifyDefaultMacro1](img/screenshot86.png)
+
+![classifyDefaultMacro2](img/screenshot87.png)
+
+* Step two : cut by quality
+We cut the ovelap by quality to get rid of most of our cross line points. The _hole_ parameter allows us to keep the points from this line if they help to fill a hole with a diameter bigger than ´0.5m´. 
+
+![cutQualityMacro](img/screenshot88.png)
+
+* Step three : cut by offset
+We cut the overlap using a 10 degrees corridor. It means that the points from a trajectory with a scan angle up to 10 degrees will be kept. If their scan angle is more than 10 degrees, they will be kept only if there is no better point (lower scan angle) from a different trajectory in their area. 
+
+ ---
+ _Warning_ : 
+Beware of the `Coverage` parameter set to 1. It means that only the points in the class 1 will be used to decide if they are to be kept. It is important because we already put a lot of points in the overlap class in the step 2. 
+ ---
+
+![cutOffsetMacro](img/screenshot89.png)
+
+* Running the macro
+After testing, we launch the macro on the project with `1m`  from neighbour blocks points. The limit the edge effect.
+
+### Ground classification
+
 
