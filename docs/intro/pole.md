@@ -597,9 +597,17 @@ This algorithm classify points isolated points, "isolated" here means that there
 
 #### Ground classification algorithm
 
- image and parameters to be changed.
+......
 ![groundClassifMacro](img/screenshot94.png) 
 
 #### Postprocessing
 
-To clean up a bit the ground class, we will use the [classify below surface](http://www.terrasolid.com/guides/tscan/crbelowsurface.php) tool. This tool exclude points which do not fit the local plane surface. 
+To clean up a bit the ground class, we will use the [classify below surface](http://www.terrasolid.com/guides/tscan/crbelowsurface.php) tool. This tool exclude points which do not fit the local plane surface. This tool calculate the average elevation variation on the 25 neigbouring points. Here we put the multiplication factor to `3` and the limit to `10`cm.
+Imagine that the average variation is _4cm_, if our point is _15cm_ below its neigbours, the point will be put to the low point class because `4X3 < 15` and `15 > 10`. Both conditions need to be respected.
+
+![classBelowSurface](img/screenshot95.png) 
+
+The "implied" ground surface will be smoother and a bit higher.
+
+
+
