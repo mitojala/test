@@ -571,6 +571,24 @@ Beware of the `Coverage` parameter set to 1. It means that only the points in th
 * Running the macro
 After testing, we launch the macro on the project with `1m`  from neighbour blocks points. The limit the edge effect.
 
+![runMacro](img/screenshot90.png)
+
 ### Ground classification
 
+Once again we will classify the ground but this time me carefully. As the ground classification algorithm takes into acount the local low points to triangulate its surface, we will preprocess the data to limit the number of bad points created by multi returns or other issues.
 
+step 1 and 2 : low points
+Here points far lower that the average in their area are put to the low points class. 
+
+ ![lowPointsMacro](img/screenshot91.png)
+ 
+ ![lowPointsMacro](img/screenshot92.png)
+
+---
+ _Note_ : 
+We use the same action twice with different parameters. It is often a good idea to do so extensively for the ground preprocessing, we could also have done it with the folowing steps but we limited these due to training considerations to let some points for manual correction. 
+ ---
+ 
+
+ 
+ 
