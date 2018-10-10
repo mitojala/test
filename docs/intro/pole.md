@@ -595,11 +595,15 @@ This algorithm classify points isolated points, "isolated" here means that there
 
 ![isolatedPointsMacro](img/screenshot93.png)
 
+#### Ground classification
+
 * step 3 :  Ground classification algorithm
 
 ![groundClassifMacro](img/screenshot94.png) 
 
-* step 4 : Postprocessing
+#### Postprocessing 
+
+* step 4 : below surface
 To clean up a bit the ground class, we will use the [classify below surface](http://www.terrasolid.com/guides/tscan/crbelowsurface.php) tool. This tool exclude points which do not fit the local plane surface. This tool calculate the average elevation variation on the 25 neigbouring points. Here we put the multiplication factor to `3` and the limit to `10`cm.
 Imagine that the average variation is _4cm_, if our point is _15cm_ below its neigbours, the point will be put to the low point class because `4X3 < 15` and `15 > 10`. Both conditions need to be respected.
 
@@ -607,10 +611,55 @@ Imagine that the average variation is _4cm_, if our point is _15cm_ below its ne
 
 The "implied" ground surface will be smoother and a bit higher.
 
-* Running the macro
+#### Macro implementation
+
 After testing, we launch the macro on the project with `200m`  from neighbour blocks points. The limit the edge effect.
 
 ### Classify water areas inside shapes
+
+The ground represent a large part of our territory but there is also some water areas. In this part our goal is to smartly classify points around those. It will allow us to go throuh some interesting classification tools and show the Terrascan's versatility. You will find a polygon in our dgn (level `12`) globally around the water area. The difficulty comes from the fact that in our project, the polygon precision is not high enough to define the water areas. To achieve a good result we will create a macro with some additional steps.
+
+#### Temp class
+
+We will first put all the points in the area to a temporary class. Doing so helps in two ways : it limits the effect of the next steps to the area of interest, without side effect and it improves the performance with the limited number of points, even allowing the use of more complex algorithms.
+
+step 1 : 
+
+Through the macro tool, we select the [classify by polygons](http://www.terrasolid.com/guides/tscan/crbypolygons.php). Here, be carefull to select the same level as your polygon (12 here)
+
+![classByPolygons](img/screenshot96.png) 
+
+#### Hard surface
+
+The [hard surface algorithm](http://www.terrasolid.com/guides/tscan/crhardsurface.php) is used often with MLS data. Here we have the chance to have really calm waters so we will be able to differentiate the large water surface from the ponds thanks to its large size, its smoothness and the elevation difference with the harbor structures. 
+
+step 2 :
+
+The points belonging to a surface bigger than `500m2` with `10cm` tolerance in our temp class(8) will be transfered to the water class (9).
+
+![hardSurface](img/screenshot97.png) 
+
+#### Temp class cleaning
+
+Our water points are now classified. We just need to put back the other points to the default class-
+
+step 3 :
+
+The classify by class from the temp class (8) to the default class (1).
+
+![classifyClass](img/screenshot99.png) 
+
+#### Elevation Adjustment
+
+The nature of of water reflectivity imply some noise, even with flat waters as in Finland. We can reduce drasticly this noise by setting a fixed elevation to water points. Here we will set all the points elevation based on the mean elevation of the lowest ones.
+
+step 4 :
+
+For this [fix elevation](http://www.terrasolid.com/guides/tscan/toolfixelevation.php) macro step, we calculate the mean elevation of the ´2%´ lowest points of the water class.
+
+![fixElevation](img/screenshot100.png) 
+
+
 
 
 
