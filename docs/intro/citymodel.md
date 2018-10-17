@@ -30,28 +30,41 @@ Our first big part consists in the buiding vectorization. Tscan offers tools to 
 
 ### Preparation
 
-We open the dgn file in the `<training>/dgn folder` with microstation so that we can start.
+#### Pointcloud analysis
+
+We open the dgn file in the `<training>/dgn` folder with microstation so that we can start.
 If it is not loaded yet, load Terrascan with microstation `key-in` : `mdl load tscan`
 
- 
- 
-load project into TScan 
+We open the project using the [main tool box](http://www.terrasolid.com/guides/tscan/intromaintoolbox.php) in `<training>/dgn` folder and then one of its blocks. 
 
-check laser data: classification, line matching, density, noise level on roofs 
+![generalToolBox](imgBuild/screenshot1.png)
+ 
+![project](imgBuild/screenshot2.png)
+
+We can now play around with the data, checking its density, classification and noise level.
+
+![data](imgBuild/screenshot3.png)
 
 cut overlap not done → would be better to do to reduce noise level and to avoid issues due to mismatch in data 
-
-issue in this data set: no points on many dark roofs → vectorization from laser data not possible 
-
-density with overlap ~23pts/m2, without overlap ~10pts/m2 
-
+density with overlap ~23pts/m2, without overlap ~10pts/m2
 10 pts/m2 are good for vectorizing buildings with major details on roofs, less density allows only vectorization of large buildings, more density improves result only marginally 
 
-classification based on grouping done 
-
-points on roofs, roof details in separate class 
-
+ ---
+ _Note_ : 
+ We can notice a first issue in the dataset. There is no point on dark roofs, vectorization will not be possible on them
+ ---
  
+![missingRoof](imgBuild/screenshot4.png)
+
+The classification was done using the grouping tools. It isolates the roof details (as chimneys) in a different class.
+
+![buildingClass](imgBuild/screenshot5.png)
+ 
+We have now analysed our data, you can close the block.
+
+
+#### Images preparation
+
 
 load model keypoints into TScan 
 
