@@ -1,17 +1,40 @@
 # Building Vectorization, Tree Mapping, and 3D City Model Visualization 
 
  
+This training will help you to generate 3d vectorised buildings and animations starting from calibrated/oriented images and a calibrated pointcloud.
 
-## Data set: 
+## Requierement 
 
-part of Jyväskylä city, laser data prepared (ground, building roofs classified), class file, images from 5 cameras (vertical, oblique), mission, adjusted image list , (true-)orthophotos 
+We will use TerraScan and Terraphoto.
+You need to have followed one of the basic trainings (ALS or MLS).
 
-laser data from 2011, images from 2012 
+## Data set: Jyväskylä
 
+Origin :
+ * part of Jyväskylä city, laser data from 2011, images from 2012 
+Included in the training folder :
+ * laser data prepared (ground, building roofs classified)
+ * class file
+ * images from 5 cameras (vertical, oblique)
+ * mission, adjusted image list , (true-)orthophotos 
+ * dgn file
+
+Overview of user interfaces :
+  * main menu [TScan](http://www.terrasolid.com/guides/tphoto/mw.php), [TPhoto](http://www.terrasolid.com/guides/tscan/index.html?intromainwindowmenucommands.php)
+  * main tool box [TScan](http://www.terrasolid.com/guides/tscan/intromaintoolbox.php)
+  * general tool box [TPhoto](http://www.terrasolid.com/guides/tphoto/tboxgeneral.php), [TModeler](http://www.terrasolid.com/guides/tmodel/tbox_general.php), 
 
 ## Building vectorization (automatically/manual improvements) 
 
+Our first big part consists in the buiding vectorization. Tscan offers tools to automaticly generate buildings from the pointcloud. A complete toolbox also offer us a way to adjust/complete this product. 
 
+### Preparation
+
+We open the dgn file in the `<training>/dgn folder` with microstation so that we can start.
+If it is not loaded yet, load Terrascan with microstation `key-in` : `mdl load tscan`
+
+ 
+ 
 load project into TScan 
 
 check laser data: classification, line matching, density, noise level on roofs 
