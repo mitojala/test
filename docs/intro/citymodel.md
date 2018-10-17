@@ -65,14 +65,22 @@ We have now analysed our data, you can close the block.
 
 #### Images preparation
 
-
-load model keypoints into TScan 
-
+For this part we will use Terraphoto. 
+Once Terraphoto is loaded (key-in : `mdl load tphoto`), we open the mission file `<Trainin>/mission/jyvaskyla_midas.mis`.
+We then load a point cloud as a DTM. We could have extracted model key points from our ground class but was done for use, just use the file `<Trainin>/laser03/key15.fbi` (main window menu : [Points/Import from file](http://www.terrasolid.com/guides/tphoto/mwloadfromfile.php).  
  
+![loadPointsTPhoto](imgBuild/screenshot6.png)
+  
+Some pararameters need to be checked in TerraPhoto settings:
 
-check TPhoto Settings > Memory usage > Image cache = 4000 MB (64-bit version) 
+ * [Memory usage > Image cache](http://www.terrasolid.com/guides/tphoto/setmemoryusage.php) set to `4000 MB` (64-bit version) 
+ 
+![memoryUsage](imgBuild/screenshot7.png)
 
-check Builtin projection systems > Finnish ETRS GK26 
+* [Builtin projection systems](http://www.terrasolid.com/guides/tphoto/setbuiltinprojectionsystems.php) with `Finnish ETRS GK26` on
+
+
+check  
 
  
 
