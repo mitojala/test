@@ -73,20 +73,17 @@ We then load a point cloud as a DTM. We could have extracted model key points fr
   
 Some pararameters need to be checked in TerraPhoto settings:
 
- * [Memory usage > Image cache](http://www.terrasolid.com/guides/tphoto/setmemoryusage.php) set to `4000 MB` (64-bit version) 
+ * [Memory usage > Image cache](http://www.terrasolid.com/guides/tphoto/setmemoryusage.php) set to `4000 MB` (64-bit version).
  
 ![memoryUsage](imgBuild/screenshot7.png)
 
-* [Builtin projection systems](http://www.terrasolid.com/guides/tphoto/setbuiltinprojectionsystems.php) with `Finnish ETRS GK26` on
+* [Builtin projection systems](http://www.terrasolid.com/guides/tphoto/setbuiltinprojectionsystems.php) with `Finnish ETRS GK26` on.
 
+Now you can open the [image list](http://www.terrasolid.com/guides/tphoto/mwloadlist.php?) <training>/mission/image_hrp_adjusted.iml through the main window image menu.
 
-check  
-
+![memoryUsage](imgBuild/screenshot7.png)
  
 
-open mission, load model keypoints from TScan, open image list (hrp-adjusted image list) 
-
- 
 
 look at images with Define color corrections dialog, check images from different cameras 
 
