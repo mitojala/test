@@ -81,49 +81,63 @@ Some pararameters need to be checked in TerraPhoto settings:
 
 Now you can open the [image list](http://www.terrasolid.com/guides/tphoto/mwloadlist.php?) <training>/mission/image_hrp_adjusted.iml through the main window image menu.
 
-![memoryUsage](imgBuild/screenshot7.png)
+![imageList](imgBuild/screenshot8.png)
+
+##### Image inspection
+
+The image list is now loaded. We will be able to look at the images, check their quality, their location and their orientation. 
+
+To look at all the images, we use [Define color corrections](http://www.terrasolid.com/guides/tphoto/mwdefinecolorcorrections.php) available in the images menu.
+
+![defineColorCorr1](imgBuild/screenshot9.png)
+
+![defineColorCorr2](imgBuild/screenshot10.png)
+
+The last number in image number indicates camera, e.g. 1=vertical cam, 2=backward-looking oblique cam, etc. You can also use the select by Camera tool.
+
+##### Image filtering
+
+Now that we are sure that our images are well in place. We will extract the list of the vertical camera images. Indeed, our tool for automatic vectorization only use them. To do so, we [delete the other camera images](http://www.terrasolid.com/guides/tphoto/mwdeletebycamera.php)from the list and save the new list under a new name. The tool is in the image menu.
  
+![deleteByCamera1](imgBuild/screenshot11.png)
 
+![deleteByCamera2](imgBuild/screenshot12.png)
 
-look at images with Define color corrections dialog, check images from different cameras 
+We save the image list in the mission subfolder as `images_hrp_adjusted_vertical.iml`.
 
-Images > Define color corrections 
+### Macro : automatic vectorization
 
-last number in image number indicates camera, e.g. 1=vertical cam, 2=backward-looking oblique cam, etc. 
+#### Macro inspection
 
+Our building vectorization will be done through a macro. It has been already prepared but let's go through its parameters to understand how it works. Open the <macro>/vectorize_buildings.mac file through the Tscan main window tool/macro menu.
  
+![vectBuildMacro1](imgBuild/screenshot13.png)
 
-delete images from oblique cameras 
+The function used is [vectorize buildinga](http://www.terrasolid.com/guides/tscan/mavectorizebuildings.php). Edit it to access its parameters.
 
-Images > Delete > By camera 
+![vectBuildMacro2](imgBuild/screenshot14.png)
 
-save image list as images_hrp_adjusted_vertical.iml 
+![vectBuildMacro3](imgBuild/screenshot15.png)
 
- 
+* user roof class: forces the vectorization of smaller details on roof represented by points in this class, ignores minimum detail setting (put to `none`)
 
-check macro for building vectorization, check settings for the vectorization step 
+* low classes: helps to place edges, use ground only if images are available, use ground and low vegetation if no images are available (`class 2, ground` here) 
 
-user roof class: forces the vectorization of smaller details on roof represented by points in this class, ignores minimum detail setting 
+* footprints can be used, only buildings with footprints are vectorized (`Do not use`)
 
-low classes: help to place edges, use ground only if images are available, use ground and low vegetation if no images are available 
+* planarity: how well points must fit to the plane equation describing a roof plane, ~15 cm for “normal” ALS data, normally not smaller than 10 cm (here `0.12m`)
 
-footprints can be used, only buildings with footprints are vectorized 
+* increase tolerance: close-to-horizontal planes should be modeled as one roof plane, requires increase in planarity tolerance (here `0.25m`
 
-planarity: how well points must fit to the plane equation describing a roof plane, ~15 cm for “normal” ALS data, normally not smaller than 10 cm 
+* use images if available,  ~ 90% vectorization is then done from laser points and around 10% from images. The downside is that it prevents us to use tslave to launch the macro. You might want to tick it off on bigger project.
 
-increase tolerance: close-to-horizontal planes should be modeled as one roof plane, requires increase in planarity tolerance 
+* output file : here will be defined all the generated polygons, the #bnumber make it possible to run the macro on every blocks wothout any overwriting one output by the othe, value : `<yourfolder>\buildings\build_#bnumber.txt`.
 
-use images if available,  ~ 90% vectorization done from laser points, 10% from images 
+#### Macro launch 
 
- 
-
-select block 33 in TScan Project window 
-
-run macro on project, selected blocks only, 200m of neighbours, Do not save points 
+As this is a training, we will only work on block 33 for the following steps. We select it in TScan Project window and use the [run macro on project](http://www.terrasolid.com/guides/tscan/marunonproject.php) tool, `selected blocks only`, `200m` of neighbours, `Do not save points`. We do not save the points because we are not changing them, only generating an output file.
 
 can not run in TSlave if images are used 
-
- 
 
 check level usage in TScan Settings > Building vectorization > Levels 
 
