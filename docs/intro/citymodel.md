@@ -1,9 +1,9 @@
 # Building Vectorization, Tree Mapping, and 3D City Model Visualization 
 
  
-This training will help you to generate 3d vectorised buildings and animations starting from calibrated/oriented images and a calibrated pointcloud.
+This training will help you to generate 3d vectorized buildings and animations starting from calibrated/oriented images and a calibrated pointcloud.
 
-## Requierement 
+## Requirement 
 
 We will use TerraScan and Terraphoto.
 You need to have followed one of the basic trainings (ALS or MLS).
@@ -26,7 +26,7 @@ Overview of user interfaces :
 
 ## Building vectorization (automatically/manual improvements) 
 
-Our first big part consists in the buiding vectorization. Tscan offers tools to automaticly generate buildings from the pointcloud. A complete toolbox also offer us a way to adjust/complete this product. 
+Our first big part consists in the building vectorization. Tscan offers tools to automatically generate buildings from the pointcloud. A complete toolbox also offer us a way to adjust/complete this product. 
 
 ### Preparation
 
@@ -60,7 +60,7 @@ The classification was done using the grouping tools. It isolates the roof detai
 
 ![buildingClass](imgBuild/screenshot5.png)
  
-We have now analysed our data, you can close the block.
+We have now analyzed our data, you can close the block.
 
 
 #### Images preparation
@@ -71,7 +71,7 @@ We then load a point cloud as a DTM. We could have extracted model key points fr
  
 ![loadPointsTPhoto](imgBuild/screenshot6.png)
   
-Some pararameters need to be checked in TerraPhoto settings:
+Some parameters need to be checked in TerraPhoto settings:
 
  * [Memory usage > Image cache](http://www.terrasolid.com/guides/tphoto/setmemoryusage.php) set to `4000 MB` (64-bit version).
  
@@ -85,9 +85,10 @@ Now you can open the [image list](http://www.terrasolid.com/guides/tphoto/mwload
 
 ##### Image inspection
 
-The image list is now loaded. We will be able to look at the images, check their quality, their location and their orientation. 
+The image list is now loaded. We will be able to look at the 
+, check their quality, their location and their orientation. 
 
-To look at all the images, we use [Define color corrections](http://www.terrasolid.com/guides/tphoto/mwdefinecolorcorrections.php) available in the images menu.
+To look at all the images, we use [Define color corrections](http://www.terrasolid.com/guides/tphoto/mwdefinecolorcorrections.php) available in the image's menu.
 
 ![defineColorCorr1](imgBuild/screenshot9.png)
 
@@ -131,7 +132,7 @@ The function used is [vectorize buildinga](http://www.terrasolid.com/guides/tsca
 
 * use images if available,  ~ 90% vectorization is then done from laser points and around 10% from images. The downside is that it prevents us to use tslave to launch the macro. You might want to tick it off on bigger project.
 
-* output file : here will be defined all the generated polygons, the #bnumber make it possible to run the macro on every blocks wothout any overwriting one output by the other, value : `<yourfolder>\buildings\build_#bnumber.txt`.
+* output file : here will be defined all the generated polygons, the #bnumber make it possible to run the macro on every blocks without any overwriting one output by the other, value : `<yourfolder>\buildings\build_#bnumber.txt`.
 
 #### Macro launch 
 
@@ -145,7 +146,7 @@ As this is a training, we will only work on block 33 for the following steps. We
  
  ##### Model loading
 
-If you open the text file in a text editor, you will notice that only the geometries are available. No level, colour or texture is associated with them. We will first associate some levels to different parts of our models when loading the vectors. To do so, we go to Tscan `settings/Building vectorization/levels`.
+If you open the text file in a text editor, you will notice that only the geometries are available. No level, color or texture is associated with them. We will first associate some levels to different parts of our models when loading the vectors. To do so, we go to Tscan `settings/Building vectorization/levels`.
 
 ![buildingLevelSettings](imgBuild/screenshot18.png)
 
