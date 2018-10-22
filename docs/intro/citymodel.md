@@ -131,13 +131,23 @@ The function used is [vectorize buildinga](http://www.terrasolid.com/guides/tsca
 
 * use images if available,  ~ 90% vectorization is then done from laser points and around 10% from images. The downside is that it prevents us to use tslave to launch the macro. You might want to tick it off on bigger project.
 
-* output file : here will be defined all the generated polygons, the #bnumber make it possible to run the macro on every blocks wothout any overwriting one output by the othe, value : `<yourfolder>\buildings\build_#bnumber.txt`.
+* output file : here will be defined all the generated polygons, the #bnumber make it possible to run the macro on every blocks wothout any overwriting one output by the other, value : `<yourfolder>\buildings\build_#bnumber.txt`.
 
 #### Macro launch 
 
-As this is a training, we will only work on block 33 for the following steps. We select it in TScan Project window and use the [run macro on project](http://www.terrasolid.com/guides/tscan/marunonproject.php) tool, `selected blocks only`, `200m` of neighbours, `Do not save points`. We do not save the points because we are not changing them, only generating an output file.
+As this is a training, we will only work on block 33 for the following steps. We select it in TScan Project window and use the [run macro on project](http://www.terrasolid.com/guides/tscan/marunonproject.php) tool, `selected blocks only`, `200m` of neighbours, `Do not save points`. We do not save the points because we are not changing them, only generating an output file. As we ticked the use of images, we can not run in TSlave.
 
-can not run in TSlave if images are used 
+![launchMacro](imgBuild/screenshot16.png)
+
+![outputMacro](imgBuild/screenshot17.png)
+
+ #### Result analysis
+ 
+If you open the text file in a text editor, you will notice that only the geometries are available. No level, colour or texture is associated with them. We will associate first some levels when loading the vectors. To do so, we go to Tscan `settings/Building vectorization/levels`.
+
+![buildingLevelSettings](imgBuild/screenshot18.png)
+
+
 
 check level usage in TScan Settings > Building vectorization > Levels 
 
@@ -149,7 +159,7 @@ random wall color
 
 look at models in design file with smooth rendering, a bit of lightning 
 
- 
+
 
 start Check building models tool 
 
