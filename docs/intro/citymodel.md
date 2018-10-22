@@ -143,17 +143,17 @@ As this is a training, we will only work on block 33 for the following steps. We
 
  #### Result analysis
  
-If you open the text file in a text editor, you will notice that only the geometries are available. No level, colour or texture is associated with them. We will associate first some levels when loading the vectors. To do so, we go to Tscan `settings/Building vectorization/levels`.
+If you open the text file in a text editor, you will notice that only the geometries are available. No level, colour or texture is associated with them. We will first associate some levels to different parts of our models when loading the vectors. To do so, we go to Tscan `settings/Building vectorization/levels`.
 
 ![buildingLevelSettings](imgBuild/screenshot18.png)
 
+You should have roof, wall and base polygons specified on different levels.
+
+As this setting is done, we can import the buildings. This is done through the [read/Building models](http://www.terrasolid.com/guides/tscan/mwreadbuildingmodels.php) tool in Terrascan main window.
+
+![readBuildingModels](imgBuild/screenshot19.png)
 
 
-check level usage in TScan Settings > Building vectorization > Levels 
-
-roof, wall, base polygons are drawn on separate levels 
-
-read text file(s) with building models 
 
 random wall color 
 
