@@ -143,6 +143,8 @@ As this is a training, we will only work on block 33 for the following steps. We
 
  #### Result analysis
  
+ ##### Model loading
+
 If you open the text file in a text editor, you will notice that only the geometries are available. No level, colour or texture is associated with them. We will first associate some levels to different parts of our models when loading the vectors. To do so, we go to Tscan `settings/Building vectorization/levels`.
 
 ![buildingLevelSettings](imgBuild/screenshot18.png)
@@ -153,14 +155,13 @@ As this setting is done, we can import the buildings. This is done through the [
 
 ![readBuildingModels](imgBuild/screenshot19.png)
 
+We will let the wall color to be picked at random.
 
+Once the models are loaded, be sure to activate their levels and to use a smooth rendering to look at them.
 
-random wall color 
+![smoothing](imgBuild/screenshot20.png)
 
-look at models in design file with smooth rendering, a bit of lightning 
-
-
-
+##### Model check
 start Check building models tool 
 
 unchecked buildings 
