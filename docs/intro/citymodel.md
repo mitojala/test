@@ -83,7 +83,7 @@ Now you can open the [image list](http://www.terrasolid.com/guides/tphoto/mwload
 
 ![imageList](imgBuild/screenshot8.png)
 
-##### Image inspection
+##### Image inspection 📷
 
 The image list is now loaded. We will be able to look at the 
 , check their quality, their location and their orientation. 
@@ -158,7 +158,7 @@ As this setting is done, we can import the buildings. This is done through the [
 
 We will let the wall color to be picked at random.
 
-Once the models are loaded, be sure to activate their levels and to use a smooth rendering to look at them.
+Once the models are loaded, be sure to activate their levels and to use a smooth rendering to look at them 👍.
 
 ![smoothing](imgBuild/screenshot20.png)
 
@@ -180,7 +180,7 @@ The parameters will be as followed :
 
 ![checkBuildModels2](imgBuild/screenshot22.png)
 
-:) The set up in place, we can start to check and correct our models! 
+😊 The set up in place, we can start to check and correct our models! 
 
 
 
