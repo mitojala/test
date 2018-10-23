@@ -164,24 +164,23 @@ Once the models are loaded, be sure to activate their levels and to use a smooth
 
 ##### Model check
 
-You can have an overall look at the models 
-start Check building models tool 
+You can have an overall look at the models to have an idea about how well it went and how many building are missing. Most of the errors should come from classification errors. After this, we will go through the models one by one using the [check building model tool](http://www.terrasolid.com/guides/tscan/toolcheckbuildingmodels.php) in the building toolbar.
 
-unchecked buildings 
+![checkBuildModels1](imgBuild/screenshot21.png)
 
-arrange views on 
+The parameters will be as followed :
+* Show : `Unchecked buildings`, as we have yet to check any building, all building will be listed.
+* Footprints : `None`, __important__ as it would mess our control if you put anything else here.
+* Arrange views : `ticked`, it will allow a more efficient process, of course you can rearrange the views afterwards.
+* Views :
+        + View 1 → display of active (selected) model, wireframe rendering, rotated top view, good for understanding xy relationship of model, level with colored edges visible
+        + View 5 → rotated view, smooth rendering, good for 3D understanding of model, only level with active model should be visible 
+        + View 7 → perspective/camera view, raw image displayed with lens distortion applied, viewer = camera position, displays best image for showing whole building (“overview”) 
+        + View 8 → another camera view, displays image that is best for placing an edge or corner of the model (“detail view”), updated when a building modification tool is used to select an edge or corner 
 
-check different views for building modification 
+![checkBuildModels2](imgBuild/screenshot22.png)
 
-Check building models dialog → list of all (unchecked) models in dgn, largest buildings first in list 
 
-View 1 → display of active (selected) model, wireframe rendering, rotated top view, good for understanding xy relationship of model, level with colored edges visible 
-
-View 5 → rotated view, smooth rendering, good for 3D understanding of model, only level with active model should be visible 
-
-View 7 → perspective/camera view, raw image displayed with lens distortion applied, viewer = camera position, displays best image for showing whole building (“overview”) 
-
-View 8 → another camera view, displays image that is best for placing an edge or corner of the model (“detail view”), updated when a building modification tool is used to select an edge or corner 
 
 start modification with easier buildings → scroll a bit down in list and select a simple building model 
 
