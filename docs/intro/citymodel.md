@@ -173,10 +173,10 @@ The parameters will be as followed :
 * Footprints : `None`, __important__ as it would mess our control if you put anything else here.
 * Arrange views : `ticked`, it will allow a more efficient process, of course you can rearrange the views afterwards.
 * Views :
-        + View 1 → display of active (selected) model, wireframe rendering, rotated top view, good for understanding xy relationship of model, level with colored edges visible
-        + View 5 → rotated view, smooth rendering, good for 3D understanding of model, only level with active model should be visible 
-        + View 7 → perspective/camera view, raw image displayed with lens distortion applied, viewer = camera position, displays best image for showing whole building (“overview”) 
-        + View 8 → another camera view, displays image that is best for placing an edge or corner of the model (“detail view”), updated when a building modification tool is used to select an edge or corner 
+    + View 1 → display of active (selected) model, wireframe rendering, rotated top view, good for understanding xy relationship of model, level with colored edges visible
+    + View 5 → rotated view, smooth rendering, good for 3D understanding of model, only level with active model should be visible 
+    + View 7 → perspective/camera view, raw image displayed with lens distortion applied, viewer = camera position, displays best image for showing whole building (“overview”) 
+    + View 8 → another camera view, displays image that is best for placing an edge or corner of the model (“detail view”), updated when a building modification tool is used to select an edge or corner 
 
 ![checkBuildModels2](imgBuild/screenshot22.png)
 
