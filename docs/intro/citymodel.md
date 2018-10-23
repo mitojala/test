@@ -208,9 +208,26 @@ Here we go to `File/Attach directory` and we select the `ortho` subfolder. Terra
 
 ![manageRasterRef3](imgBuild/screenshot26.png)
 
-extract color for points from orthophotos 
+#### Extract color for points from orthophotos 
 
-activate color attribute for project 
+Once the references are available, we need to use them to color the pointcloud. This is done in a two steps process. 
+
+* First you activate your `color` attribute in the Terrascan project ([Edit project information](http://www.terrasolid.com/guides/tscan/prjeditprojectinformation.php)). 
+
+![activateColorProject1](imgBuild/screenshot27.png)
+
+![activateColorProject1](imgBuild/screenshot28.png)
+
+![activateColorProject1](imgBuild/screenshot29.png)
+
+ ---
+ _Warning_ : 
+If you do not do this, the pointcloud in memory will be colored but not the saved one.
+---
+
+* For the second step you [extract color from images](http://www.terrasolid.com/guides/tscan/mwextractcolorfromimages.php), action which consists in applying the image colors to the points with the same XY coordinates.
+
+
 
 TScan Project window Tools > Extract color from images 
 
