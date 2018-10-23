@@ -242,11 +242,13 @@ To see the result of our work, let's switch off display of orthos for view 1 (ke
 
 Good news, it worked! 😊
 
- 
+ ---
+ _Trick_ : 
+If your rending seems noisy, you can go to `Tscan Settings/PointDisplay/Depth separation` and change it to around `4.0m`. 
+--- 
 
-check TScan Settings > Point display > Depth separation, maybe change value to something big like 4.0 m, point cloud visualization gets less noisy 
+### model texturing
 
- 
 
 close image list in TPhoto 
 
