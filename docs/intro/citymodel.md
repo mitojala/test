@@ -162,7 +162,7 @@ Once the models are loaded, be sure to activate their levels and to use a smooth
 
 ![smoothing](imgBuild/screenshot20.png)
 
-##### Model check
+##### Model check/correction
 
 You can have an overall look at the models to have an idea about how well it went and how many building are missing. Most of the errors should come from classification errors. After this, we will go through the models one by one using the [check building model tool](http://www.terrasolid.com/guides/tscan/toolcheckbuildingmodels.php) in the building toolbar.
 
@@ -179,6 +179,8 @@ The parameters will be as followed :
     + View 8 → another camera view, displays image that is best for placing an edge or corner of the model (“detail view”), updated when a building modification tool is used to select an edge or corner 
 
 ![checkBuildModels2](imgBuild/screenshot22.png)
+
+:) The set up in place, we can start to check and correct our models! 
 
 
 
