@@ -62,7 +62,6 @@ The classification was done using the grouping tools. It isolates the roof detai
  
 We have now analyzed our data, you can close the block.
 
-
 #### Images preparation
 
 For this part we will use Terraphoto. 
@@ -182,13 +181,13 @@ The parameters will be as followed :
 
 😊 The set up in place, we can start to check and correct our models! 
 
+There is a bunch of tools to correct buildings, not all of them are easy to understand on your first use so pick a simple model and start with the simpliest tools. Of course you should go through all the tools documentation ( [Building patches](http://www.terrasolid.com/guides/tscan/tboxbuildingpatches.php) and [Building edges](http://www.terrasolid.com/guides/tscan/tboxbuildingedges.php) ) should you start a real life city modelling project.
 
+ ---
+ _Note_ : 
+A [video](http://www.terrasolid.com/download/animations/deliverybpt.php) 🎬 displaying how to do it (__maybe include an iframe__) is available  on our website.
+---
 
-start modification with easier buildings → scroll a bit down in list and select a simple building model 
-
-check different modification tools from Building patches and Building edges tool sets 
-
-see more info and example usage in the User Guide and the training animation 
 
 Colored point cloud and textured vector models 
 
