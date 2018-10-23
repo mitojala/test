@@ -163,6 +163,8 @@ Once the models are loaded, be sure to activate their levels and to use a smooth
 ![smoothing](imgBuild/screenshot20.png)
 
 ##### Model check
+
+You can have an overall look at the models 
 start Check building models tool 
 
 unchecked buildings 
