@@ -188,15 +188,23 @@ There is a bunch of tools to correct buildings, not all of them are easy to unde
 A [video](http://www.terrasolid.com/download/animations/deliverybpt.php) 🎬 displaying how to do it (__maybe include an iframe__) is available  on our website.
 ---
 
+## Point cloud coloring and model texturing 
 
-Colored point cloud and textured vector models 
+The geometries of our vector models are now good (or should be 😅), let's add some realistic colors to our project!
 
-attach orthophotos as references in TPhoto 
+### PointCloud coloring
+
+#### Orthophotos as reference
+
+To apply realistic coloring to our pointcloud, we will first need to attach orthophotos as references in TPhoto. This will be done through [Manage raster references](http://www.terrasolid.com/guides/tphoto/toolmanagerasterreferences.php) tool.
+
+![checkBuildModels2](imgBuild/screenshot23.png)
 
 Manage raster references, File > Attach directory, select ortho folder 
 
 display in view 1 and Render view 
 
+![manageRasterRef](imgBuild/screenshot24.png)
  
 
 extract color for points from orthophotos 
