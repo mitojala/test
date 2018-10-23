@@ -183,6 +183,8 @@ The parameters will be as followed :
 
 There is a bunch of tools to correct buildings, not all of them are easy to understand on your first use so pick a simple model and start with the simpliest tools. Of course you should go through all the tools documentation ( [Building patches](http://www.terrasolid.com/guides/tscan/tboxbuildingpatches.php) and [Building edges](http://www.terrasolid.com/guides/tscan/tboxbuildingedges.php) ) should you start a real life city modelling project.
 
+
+
  ---
  _Note_ : 
 A [video](http://www.terrasolid.com/download/animations/deliverybpt.php) 🎬 displaying how to do it (__maybe include an iframe__) is available  on our website.
@@ -198,14 +200,13 @@ The geometries of our vector models are now good (or should be 😅), let's add 
 
 To apply realistic coloring to our pointcloud, we will first need to attach orthophotos as references in TPhoto. This will be done through [Manage raster references](http://www.terrasolid.com/guides/tphoto/toolmanagerasterreferences.php) tool.
 
-![checkBuildModels2](imgBuild/screenshot23.png)
+![manageRasterRef1](imgBuild/screenshot24.png)
 
-Manage raster references, File > Attach directory, select ortho folder 
+Here we go to `File/Attach directory` and we select the `ortho` subfolder. TerraPhoto dialog ask you now on which mode/views you want to display the references. Please pick `view 1` and `Render`.
 
-display in view 1 and Render view 
+![manageRasterRef2](imgBuild/screenshot25.png)
 
-![manageRasterRef](imgBuild/screenshot24.png)
- 
+![manageRasterRef3](imgBuild/screenshot26.png)
 
 extract color for points from orthophotos 
 
