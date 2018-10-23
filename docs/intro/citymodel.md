@@ -227,15 +227,20 @@ If you do not do this, the pointcloud in memory will be colored but not the save
 
 * For the second step you [extract color from images](http://www.terrasolid.com/guides/tscan/mwextractcolorfromimages.php), action which consists in applying the image colors to the points with the same XY coordinates.
 
+Parameters will be :
+ + all classes : we want to color all classes.
+ + extract from ortho images : these should be the only images available.
+ + footprint 1 pixel : we will use only the closest pixel to define our point color.
 
+ ![extractColorPoints](imgBuild/screenshot30.png)
 
-TScan Project window Tools > Extract color from images 
+#### Vizualisation
 
-all classes, extract from ortho images, footprint 1 pixel 
+To see the result of our work, let's switch off display of orthos for view 1 (keep R on for rendering) in the manage raster reference tool, load laser points from all files of the project and display points by color.
 
- 
+ ![coloredPoints](imgBuild/screenshot31.png)
 
-switch off display of orthos view 1 (keep R on for rendering), load laser points from all files of the project and display points by color to check result 
+Good news, it worked! 😊
 
  
 
