@@ -274,7 +274,7 @@ We can then go to TerraPhoto Rectify menu and select [Rectify wall rasters](http
 
 
 
-minimum area 5 m210% coverage0.10 m pixel size 
+minimum area 5 m2 10% coverage0.10 m pixel size 
 
 format tiffdo not use depth maps 
 
