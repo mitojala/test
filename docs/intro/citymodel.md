@@ -247,28 +247,32 @@ Good news, it worked! 😊
 If your rending seems noisy, you can go to `Tscan Settings/PointDisplay/Depth separation` and change it to around `4.0m`. 
 --- 
 
-### model texturing
+### Model texturing
 
+#### Oblique image list
 
-close image list in TPhoto 
+The model wall texturing will be done by applying the oblique images as texture to the building models. To do so, we need to load an oblique image list.
 
-load list with all images (hrp_adjusted) 
-
-delete images from vertical camera 
-
-Images > Delete > By camera 
-
-save list as images_hrp_adjusted_oblique.iml 
-
-make all levels with vector models visible in dgn, all other levels invisible 
-
+* Close the loaded image list (with only vertical images)
  
+ ![closeImageList](imgBuild/screenshot32.png)
 
-select vector models 
+* Load the complete image list (`hrp_adjusted`) through the Images menu.
+* Delete the vertical images through [delete the other camera images](http://www.terrasolid.com/guides/tphoto/mwdeletebycamera.php).
 
-create wall textures 
+![deleteByCamera1](imgBuild/screenshot11.png)
 
-Rectify > Rectify wall rasters 
+* Save the new list as `images_hrp_adjusted_oblique.iml `
+
+#### Texturing
+
+To texture our walls, we need to select our models. To do so, make all levels with vector models visible in dgn, all other levels invisible and use microstation selection tool. 
+
+We can then go to TerraPhoto Rectify menu and select [Rectify wall rasters](http://www.terrasolid.com/guides/tphoto/mwrectifywallrasters.php?).
+
+
+
+
 
 minimum area 5 m210% coverage0.10 m pixel size 
 
