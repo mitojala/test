@@ -1,6 +1,8 @@
 # Building Vectorization, Tree Mapping, and 3D City Model Visualization 
 
  
+ 'WHOOPWHOOP!'
+ 
 This training will help you to generate 3d vectorized buildings and animations starting from calibrated/oriented images and a calibrated pointcloud.
 
 ## Requirement 
