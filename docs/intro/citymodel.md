@@ -192,7 +192,7 @@ There is a bunch of tools to correct buildings, not all of them are easy to unde
 A [video](http://www.terrasolid.com/download/animations/deliverybpt.php) 🎬 displaying how to do it (__maybe include an iframe__) is available  on our website.
 ---
 
-## Point cloud coloring and model texturing 
+## Point cloud coloring, model and groundtexturing 
 
 The geometries of our vector models are now good (or should be 😅), let's add some realistic colors to our project!
 
@@ -270,39 +270,42 @@ The model wall texturing will be done by applying the oblique images as texture 
 
 To texture our walls, we need to select our models. To do so, make all levels with vector models visible in dgn, all other levels invisible and use microstation selection tool. 
 
-We can then go to TerraPhoto Rectify menu and select [Rectify wall rasters](http://www.terrasolid.com/guides/tphoto/mwrectifywallrasters.php?).
+We can then go to TerraPhoto Rectify menu and select [Rectify wall rasters](http://www.terrasolid.com/guides/tphoto/mwrectifywallrasters.php?) with the following parameters :
+
+* Images : `All images`
+* Minimum area : `5 m2`
+* Coverage : `10%`
+* Pixel size : `0.10 m`
+* Format : `Tiff`
+* Depth maps : `do not use` 
+* Raster directory (output) : `<project>/dgn`
+* Prefix : wall_modify 
+* Modify element color : `✅`
+
+ ![rectifyWall](imgBuild/screenshot33.png)
+
+Thousands of images should now be created in your dgn folder. To see the result, we need to use Tphoto [Render view tool](http://www.terrasolid.com/guides/tphoto/tooldisplayrenderedview.php) on view one and maybe rotate it to an isometric point of view.
+
+![rectifyWall](imgBuild/screenshot33.png)
+
+It worked! 🎉🎉
+
+If your wall and/or your roof is not appearing as on the image above, you have to check the [Display Rendering Settings tool](http://www.terrasolid.com/guides/tphoto/tooldefinerenderingsettings.php). 
+
+![renderingSettings](imgBuild/screenshot34.png)
+
+ ---
+ _Warning_ : 
+The Design levels parameter refers to the levels containing vectors rendered using the Manage Raster Reference tool we used to color the pointcloud. If you put the level 6 on the list, the wall texture will use the images from the ortho instead of the ones generated from the oblique images.
+--- 
+
+If you lost your raster references since the point cloud coloring, you can put them back following the same instruction ( Manage Raster Reference tool > Subfolder : `Ortho` View `R` (for rended) ticked.
+
+Now lastly you select again the Render view tool, you pick view 1 and it should work (both roofs and walls rendered).
+
+### Ground Rendering
 
 
-
-
-
-minimum area 5 m2 10% coverage0.10 m pixel size 
-
-format tiffdo not use depth maps 
-
-output folder same as design file folder (dgn) 
-
-prefix wall_modify element color on 
-
- 
-
-rotate view 1 
-
-use TPhoto Render view tool, display rendered view with wall textures 
-
- 
-
-Display Rendering Settings tool 
-
-Drape rasters on levels that contain roof polygons (e.g. 1,5) 
-
-open Manage raster references tool, attach directory, folder with orthophotos, switch only R (render) on 
-
-step was done before but wall texture creation seems to detach references 
-
-use TPhoto Render view tool, display rendered view with orthos draped on roofs 
-
- 
 
 TerraModeler Surfaces tool, File > Import xyz binary file, select key15.fbi file from laser folder 
 
