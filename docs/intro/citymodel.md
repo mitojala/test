@@ -7,7 +7,7 @@ This training will help you to generate 3d vectorized buildings and animations s
 
 ## Requirement 
 
-We will use TerraScan and Terraphoto.
+We will use TerraScan, TerraModeler and Terraphoto.
 You need to have followed one of the basic trainings (ALS or MLS).
 
 ## Data set: Jyväskylä
@@ -286,13 +286,13 @@ We can then go to TerraPhoto Rectify menu and select [Rectify wall rasters](http
 
 Thousands of images should now be created in your dgn folder. To see the result, we need to use Tphoto [Render view tool](http://www.terrasolid.com/guides/tphoto/tooldisplayrenderedview.php) on view one and maybe rotate it to an isometric point of view.
 
-![rectifyWall](imgBuild/screenshot33.png)
+![rectifyWall](imgBuild/screenshot34.png)
 
 It worked! 🎉🎉
 
 If your wall and/or your roof is not appearing as on the image above, you have to check the [Display Rendering Settings tool](http://www.terrasolid.com/guides/tphoto/tooldefinerenderingsettings.php). 
 
-![renderingSettings](imgBuild/screenshot34.png)
+![renderingSettings](imgBuild/screenshot35.png)
 
  ---
  _Warning_ : 
@@ -303,22 +303,51 @@ If you lost your raster references since the point cloud coloring, you can put t
 
 Now lastly you select again the Render view tool, you pick view 1 and it should work (both roofs and walls rendered).
 
-### Ground Rendering
+### Ground Rendering (TerraModeler)
 
+#### Surface generation
 
+As you can see, the ground is red on the image. We will use a Terramodeler tool to render it.
 
-TerraModeler Surfaces tool, File > Import xyz binary file, select key15.fbi file from laser folder 
+In TerraModeler Surfaces tool, go to File and pick [Import binary file](http://www.terrasolid.com/guides/tmodel/importxyzbinaryfile.php).
 
-Default exclusion, Exclude outer triangles off 
+![modelerSurface](imgBuild/screenshot36.png)
 
-name for surface model = key15, ok 
+![modelerImportBinary1](imgBuild/screenshot37.png)
 
-use Display raster triangles tool of TModeler to display surface model key15 on level 55 
+Then we pick `key15.fbi` file from laser folder
 
-display level 55 in view 1 
+The next dialog ask us to specify if our point have a special meaning (are they to be used to compute breaklines by example). As our fbi file contains only "classic" meaningful ground point, we can let the setting as `Random point`.
 
-use TPhoto Render view tool, display rendered view with orthos draped on surface model 
+![modelerImportBinary2](imgBuild/screenshot38.png)
 
+We have our points, we can now triangulate them through the [Triangulate surface dialog](http://www.terrasolid.com/guides/tmodel/triangulatesurvey.php). For this step, tick off all.
+
+![modelerImportBinary3](imgBuild/screenshot39.png)
+
+In the secondary Surface settings dialog, we name the surface model from our fbi file, `key15`.
+
+![modelerImportBinary4](imgBuild/screenshot40.png)
+
+#### Surface rendering
+
+To render the surface, we first need to vectorize its triangles in microstation. For this step, we use [Display raster triangles](http://www.terrasolid.com/guides/tmodel/displayrastertriangles.php?).
+
+![displayRasterTriangle1](imgBuild/screenshot41.png)
+
+As parameters, we choose our `key15` surface and generate display the triangles on `level 55` on view `1`.
+
+![displayRasterTriangle2](imgBuild/screenshot42.png)
+
+If your level 55 is active, white triangles should appear on view 1, if not, activate this level.
+
+![displayRasterTriangle3](imgBuild/screenshot43.png)
+
+Now we render everything with with TPhoto Render view tool. Be careful to drape the orthos on surface model.
+
+![displayRasterTriangle3](imgBuild/screenshot43.png)
+
+It all done : ground, roofs and walls are textured.
  
 
 open block 33 
