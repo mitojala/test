@@ -192,7 +192,7 @@ There is a bunch of tools to correct buildings, not all of them are easy to unde
 A [video](http://www.terrasolid.com/download/animations/deliverybpt.php) 🎬 displaying how to do it (__maybe include an iframe__) is available  on our website.
 ---
 
-## Point cloud coloring, model and groundtexturing 
+## Point cloud coloring, model and ground texturing 
 
 The geometries of our vector models are now good (or should be 😅), let's add some realistic colors to our project!
 
@@ -345,30 +345,32 @@ If your level 55 is active, white triangles should appear on view 1, if not, act
 
 Now we render everything with with TPhoto Render view tool. Be careful to drape the orthos on surface model.
 
-![displayRasterTriangle3](imgBuild/screenshot43.png)
+![displayAll](imgBuild/screenshot44.png)
 
 It all done : ground, roofs and walls are textured.
  
+## Fly-through movie creation 
 
-open block 33 
+### Data preparation
 
-display medium, high vegetation and pole classes, all other classes off 
+As most our data is ready (point colored and vector elements rendered) we will prepare and produce our final animation. 
 
-trees best represented in point cloud, display true dimensions and shape for tree crowns 
+To complete our building models, we will use some of the point classes. Please open the `block 33`, go to the display tool of Terrascan and select only  medium, high vegetation and pole classes.
+
+As you can see the tree shapes are really well represented through dense point clouds. Colors from images are not so good for smaller, especially linear objects. Constant or intensity colors offer better for visualization for these, constant color can highlight objects in point cloud. 
+
+
 
 use TPhoto Render view tool, display rendered view with points on trees and poles 
 
  
 
-color from images not so good for smaller, espec. linear objects, constant or intensity colors better for visualization, constant color can highlight certain objects in point cloud 
 
 open Display mode dialog, Color by intensity custom, Colors button 
 
 save the intensity coloring scheme into a file 
 
 cancel, close Display mode dialog 
-
- 
 
  
 
@@ -382,35 +384,6 @@ use TPhoto Render view tool, display rendered view with points on trees and pole
 
 save points 
 
-Tree mapping for cities 
-
-check cell library, attach ″karttali″ from terra installation folder 
-
-check settings for tree species in TScan 
-
-sample species birch and spruce 
-
-use cells from the sample library 
-
-draw fence around trees along a road 
-
-Create tree cells 
-
-one example species 
-
-all points of a group inside fence 
-
-select tree cells, Modify tree cells 
-
-top, section, camera view 
-
-use oblique images in camera view for detecting tree crown dimensions and trunk width 
-
-select tree cells, Output tree cells 
-
-write tree information into text file 
-
-import for DB application 
 
 Creation of a fly-through animation 
 
@@ -467,3 +440,36 @@ More information about this topic
 TScan Users Guide, Chapter 9: 3D Building Models http://www.terrasolid.com/download/user_guides.php) 
 
 Training animations: http://www.terrasolid.com/download/animations/deliverybpt.php 
+
+
+
+
+Tree mapping for cities 
+
+check cell library, attach ″karttali″ from terra installation folder 
+
+check settings for tree species in TScan 
+
+sample species birch and spruce 
+
+use cells from the sample library 
+
+draw fence around trees along a road 
+
+Create tree cells 
+
+one example species 
+
+all points of a group inside fence 
+
+select tree cells, Modify tree cells 
+
+top, section, camera view 
+
+use oblique images in camera view for detecting tree crown dimensions and trunk width 
+
+select tree cells, Output tree cells 
+
+write tree information into text file 
+
+import for DB application 
